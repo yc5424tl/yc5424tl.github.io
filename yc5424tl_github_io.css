@@ -1,10 +1,32 @@
-#banner {
+#sideBar {
 
-    background-color: #00090B/*#D7A461*/;
-    color: #9F7000;
+    background-color: #515A47/*#002b36 - #D7A461*/;
+    color: #D7BE82;
+    outline: #400406 groove thin;
+    outline-offset: .3cm;
+    text-align: center;
+    margin: 5%;
+    padding: 10px;
+    position: absolute;
+    width: 200px;
+    height: 100%;
 }
 
 body {
-    background-color: #FFE5A7;
-    color: #0E2126;
+    background-color: #F4F1BB;
+    color: #073642;
     }
+
+
+
+#banner {
+    background-color:#400406;
+    color:#D7BE82;
+    position:fixed;
+    width:100%;
+    padding:10px;
+}
+
+#mainText {
+
+}
