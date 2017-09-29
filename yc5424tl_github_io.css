@@ -1,32 +1,119 @@
+/* Theme A:
+    - ED6A5A Terra Cotta
+    - 5D576B Black Coral
+    - F4F1BB Blond
+    - 9BC1BC Cambridge Blue
+    - E6EBE0 Platinum
+    */
+
+
+
+
 #sideBar {
 
-    background-color: #515A47/*#002b36 - #D7A461*/;
-    color: #D7BE82;
-    outline: #400406 groove thin;
-    outline-offset: .3cm;
-    text-align: center;
-    margin: 5%;
-    padding: 10px;
-    position: absolute;
-    width: 200px;
+    background-color: #6B9080/*# 515A47- #D7A461*/;
+    color: #C3DBC5;
+
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+    position: fixed;
+    width: 13%;
     height: 100%;
+    float: left;
+    text-align: left;
+    /*margin-top: 200px;*/
+    font-family: BPtypewrite, sans-serif;
+    font-size: 8pt;
+    text-transform: uppercase;
+}
+
+
+h3 {
+    border-bottom: solid 5px #fcdebe;
+    border-right: solid 5px #fcdebe;
+    color: #C3DBC5;
+    padding: 2%;
+    text-align: center;
+    font-family: BPtypewrite, sans-serif;
+    float: inherit;
+}
+
+#topNavContainer {
+    margin-top: 15%;
+    margin-bottom: 3%;
+    margin-left:28%;
+    margin-right: 0;
+    float: inherit;
+    align-content: flex-end;
 }
 
 body {
-    background-color: #F4F1BB;
-    color: #073642;
+    background-color: #3a445d;
+    color: #C3DBC5;
+
+    background-image: -webkit-linear-gradient(#0D1B1E, #0D1B1E);
+    background-image: -moz-linear-gradient(#0D1B1E, #0D1B1E);
+    background-image: -o-linear-gradient(#0D1B1E, #0D1B1E);
+
+
+    padding: 0;
     }
 
 
 
+
+
+
 #banner {
-    background-color:#400406;
-    color:#D7BE82;
-    position:fixed;
+    background-image: url(images/oldBooksBannerCrop.jpg);
+    background-color: #400406;
+    color: #E6EBE0;
     width:100%;
-    padding:10px;
+    text-align: center;
+    padding:0;
+    height: 380px;
+    font-family: "Helvetica Bold Condensed Plain", sans-serif;
+    font-size: 8pt;
+    margin-bottom: 1%;
+    float: none;
+    margin-left: 7%;
+    vertical-align: text-bottom;
+    text-transform: uppercase;
+    position:absolute;
 }
 
-#mainText {
 
+#sideBarList {
+    margin-top: 380px;
+
+    list-style-type: none;
+    padding-bottom: 4%;
+}
+
+
+#mainText {
+    margin-left:18%;
+    margin-right: 5%;
+    margin-top: 5%;
+    width: auto;
+    float: inherit;
+    padding-top: 3%;
+    background-color: #9BC1BC;
+    color:#C3DBC5;
+    height: auto;
+    text-align: center;
+    background-image: -webkit-linear-gradient(#0D1B1E, #0D1B1E);
+    background-image: -moz-linear-gradient(#0D1B1E, #0D1B1E);
+    background-image: -o-linear-gradient(#0D1B1E, #0D1B1E);
+    -moz-box-shadow: inset -2px 2px 5px 5px #0E0E0E;
+    -webkit-box-shadow: inset -2px 2px 5px 5px #0E0E0E;
+    box-shadow: inset -2px 2px 5px 5px #0E0E0E;
+    font-family: BPtypewrite, sans-serif;
+}
+
+.container-float {
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
