@@ -24,8 +24,7 @@ body {
     margin-left: 17vw;
 }
 #banner {
-    background-image: url(images/oldBooksBannerCrop.jpg);
-    background-color: #400406;
+    background: #400406 url(https://cdn.pixabay.com/photo/2014/09/05/18/32/old-books-436498__340.jpg);
     color: #E6EBE0;
     width:83vw;
     height:17vw;
@@ -65,7 +64,7 @@ header, section, footer, aside, nav, article, figure {
 
 #topNavDiv{
     list-style: none;
-    margin: 16vw 0 4vw 0vw;
+    margin: 16vw 0 4vw 0;
 
     align-content: flex-end;
     text-align: left;
