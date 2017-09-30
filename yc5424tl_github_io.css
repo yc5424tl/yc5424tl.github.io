@@ -7,47 +7,6 @@
     */
 
 
-
-
-#sideBar {
-
-    background-color: #6B9080/*# 515A47- #D7A461*/;
-    color: #C3DBC5;
-
-    margin-right: 0;
-    margin-left: 0;
-    padding: 0;
-    position: fixed;
-    width: 13%;
-    height: 100%;
-    float: left;
-    text-align: left;
-    /*margin-top: 200px;*/
-    font-family: BPtypewrite, sans-serif;
-    font-size: 8pt;
-    text-transform: uppercase;
-}
-
-
-h3 {
-    border-bottom: solid 5px #fcdebe;
-    border-right: solid 5px #fcdebe;
-    color: #C3DBC5;
-    padding: 2%;
-    text-align: center;
-    font-family: BPtypewrite, sans-serif;
-    float: inherit;
-}
-
-#topNavContainer {
-    margin-top: 15%;
-    margin-bottom: 3%;
-    margin-left:28%;
-    margin-right: 0;
-    float: inherit;
-    align-content: flex-end;
-}
-
 body {
     background-color: #3a445d;
     color: #C3DBC5;
@@ -55,49 +14,96 @@ body {
     background-image: -webkit-linear-gradient(#0D1B1E, #0D1B1E);
     background-image: -moz-linear-gradient(#0D1B1E, #0D1B1E);
     background-image: -o-linear-gradient(#0D1B1E, #0D1B1E);
+    font-family: BPtypewrite, sans-serif;
+    font-size: 1vw;
+
+}
 
 
-    padding: 0;
-    }
-
-
-
-
-
-
+#mainContainer{
+    margin-left: 17vw;
+}
 #banner {
     background-image: url(images/oldBooksBannerCrop.jpg);
     background-color: #400406;
     color: #E6EBE0;
-    width:100%;
+    width:83vw;
+    height:17vw;
     text-align: center;
-    padding:0;
-    height: 380px;
-    font-family: "Helvetica Bold Condensed Plain", sans-serif;
-    font-size: 8pt;
-    margin-bottom: 1%;
-    float: none;
-    margin-left: 7%;
-    vertical-align: text-bottom;
-    text-transform: uppercase;
     position:absolute;
 }
 
+#sideBar {
 
-#sideBarList {
-    margin-top: 380px;
+    position: fixed;
+    width: 17vw;
+    height: 100vw;
 
+    background-color: #6B9080;
+    color: #C3DBC5;
+
+    text-align: center;
+    text-transform: uppercase;
+
+
+}
+
+header, section, footer, aside, nav, article, figure {
+    display: block;
+}
+
+#sideBarList li {
+    font-size: 1vw;
+}
+#sideBarList{
+    margin-top:17vw;
     list-style-type: none;
     padding-bottom: 4%;
+    text-align: center;
+
+}
+
+#topNavDiv{
+    list-style: none;
+    margin: 16vw 0 4vw 0vw;
+
+    align-content: flex-end;
+    text-align: left;
+    width: 80vw;
+
 }
 
 
-#mainText {
-    margin-left:18%;
-    margin-right: 5%;
-    margin-top: 5%;
-    width: auto;
-    float: inherit;
+#topNavList li {
+    display: inline;
+    padding-left:5.5vw;
+    padding-right:5vw;
+
+
+    border-bottom: solid 3px #fcdebe;
+    border-right: solid 3px #fcdebe;
+    color: #C3DBC5;
+
+    font-size: 1vw;
+}
+h3 {
+    border-bottom: solid 3px #fcdebe;
+    border-right: solid 3px #fcdebe;
+    color: #C3DBC5;
+    padding: .5%;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+#content {
+    margin-left: 5vw;
+    width: 70vw;
     padding-top: 3%;
     background-color: #9BC1BC;
     color:#C3DBC5;
@@ -112,8 +118,15 @@ body {
     font-family: BPtypewrite, sans-serif;
 }
 
-.container-float {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+
+
+#footer {
+    text-align: center;
+    margin-left: 17vw;
 }
+#footer ul {
+    list-style: none;
+}
+
+
+
