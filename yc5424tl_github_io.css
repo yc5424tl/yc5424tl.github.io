@@ -72,7 +72,6 @@ header, section, footer, aside, nav, article, figure {
     padding: 0.5vw 5vw .5vw 5.5vw;
     border-bottom: solid 3px #fcdebe;
     border-right: solid 3px #fcdebe;
-    border-left: solid  3px #fcdebe;
     color: #C3DBC5;
     font-size: 1vw;
 }
