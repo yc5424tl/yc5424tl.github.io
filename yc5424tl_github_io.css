@@ -1,11 +1,11 @@
 
 body {
-    background-color: #0D1B1E;
+    background-color: #001427;
     color: #ffead0;
 
-    background-image: -webkit-linear-gradient(#0D1B1E, #002933);
-    background-image: -moz-linear-gradient(#0D1B1E, #002933);
-    background-image: -o-linear-gradient(#0D1B1E, #002933);
+    background-image: -webkit-linear-gradient(#001427, #002933);
+    background-image: -moz-linear-gradient(#001427, #002933);
+    background-image: -o-linear-gradient(#001427, #002933);
     font-family: "Rubber Stamp LET", sans-serif;
     font-size: .5vw;
 
@@ -48,9 +48,9 @@ body {
 
     background-color: #BA001B;
     color: #ffead0;
-
+    font-size: 1vw;
     text-align: center;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     border-right: solid .1vw #ffead0;
     border-collapse: collapse;
 
@@ -60,7 +60,7 @@ body {
     -webkit-transition-duration: 0.4s;
     -moz-transition-duration: 0.4s;
     transition-duration: 0.4s;
-    background-color: #0D1B1E;
+    background-color: #001427;
     color: #ffead0;
 }
 
@@ -131,10 +131,10 @@ header, section, footer, aside, nav, article, figure {
 }
 
 #sideBarList li {
-    font-size: 1.3vw;
+    /*font-size: 1.3vw;*/
     width: 15vw;
-    padding-top: .2vw;
-    padding-bottom: .05vw;
+    padding-top: .1vw;
+    padding-bottom: .1vw;
     margin: 0;
     border: solid .05vw #ffead0;
     border-collapse: collapse;
@@ -142,9 +142,10 @@ header, section, footer, aside, nav, article, figure {
 }
 
 .sideBarList2 li {
-    font-size: 1.3vw;
+    /*font-size: 1.3vw;*/
     width: 15vw;
-    padding-top: .2vw;
+    padding-top: .1vw;
+    padding-bottom: .1vw;
     margin:0;
     border: solid .05vw #ffead0;
     border-collapse: collapse;
@@ -165,7 +166,7 @@ header, section, footer, aside, nav, article, figure {
     width:auto;
     max-width: 15vw;
     align-self: center;
-    margin-top: 3vw;
+    margin-top: 0;
     margin-right: 3vw;
 }
 
@@ -174,12 +175,13 @@ header, section, footer, aside, nav, article, figure {
     display: inline-flex;
     color: #ffeaf0;
     padding-right: 2vw;
-    padding-top:2vw;
-    font-size: larger;
+    padding-top:0;
+
 }
 #sideBarList{
-    background-color: #0D1B1E;
+    background-color: #001427;
     margin-top:16.8vw;
+    margin-bottom: 6.5vw;
     list-style:none;
     padding:0;
     text-align: center;
@@ -193,7 +195,8 @@ header, section, footer, aside, nav, article, figure {
 }
 
 .sideBarList2{
-    background-color: #0D1B1E;
+    margin-top:1.25vw;
+    background-color: #001427;
     list-style:none;
     padding:0;
     text-align: center;
@@ -206,10 +209,39 @@ header, section, footer, aside, nav, article, figure {
 
 }
 
+.openParaButton{
+    float: left;
+    border: .2vw #001427;
+    border-top-style: outset;
+    border-right-style: double;
+    border-bottom-style: double;
+    background-color:#ffeaf0;
+    color: #001427;
+    font-variant: all-small-caps;
+    padding: .5vw 0 .5vw .05vw;
+    margin: 4vw 0 4vw 0;
+    width: 16vw;
+    display: block;
+    text-align: center;
+    font-synthesis: weight;
+    height: auto;
+
+}
+
+.paraOpenDiv{
+    position:relative;
+    left: -3vw;
+    display: block;
+}
+
 .fa{
     color:#002933;
 }
+.fa:hover{
+    color:#ffead0;
+}
 #topNavDiv{
+    font-size: 1vw;
     position: absolute;
     list-style:none;
     margin-top: 16.9vw;
@@ -229,7 +261,7 @@ header, section, footer, aside, nav, article, figure {
     position: absolute;
     border-collapse: collapse;
     display: inline-flex;
-    padding: 0.2vw 3.75vw 0 6.25vw;
+    padding: 0.1vw 3.75vw 0.05vw 6.25vw;
     border: solid .1vw #ffead0;
 
     font-size: 1vw;
@@ -253,25 +285,31 @@ header, section, footer, aside, nav, article, figure {
     text-align: center;
 }*/
 #content {
-    margin-left: 1vw;
+    margin-left: 3vw;
+    margin-right: 2vw;
     padding-right: 0;
     padding-left: 0;
-    width: 82vw;
+    width: 78vw;
     padding-top: 3%;
     background-color: #002933;
     color:#ffead0;
     height: 100%;
-    background-image: -webkit-linear-gradient(#002933, #0D1B1E);
-    background-image: -moz-linear-gradient(#002933, #0D1B1E);
-    background-image: -o-linear-gradient(#002933, #0D1B1E);
-    -moz-box-shadow: inset -2px 2px 5px 5px #0D1B1E;
-    -webkit-box-shadow: inset -2px 2px 5px 5px #0D1B1E;
+    background-image: -webkit-linear-gradient(#13293D, #001427);
+    background-image: -moz-linear-gradient(#13293D, #001427);
+    background-image: -o-linear-gradient(#13293D, #001427);
+    -moz-box-shadow: inset -2px 2px 5px 5px #001427;
+    -webkit-box-shadow: inset -2px 2px 5px 5px #001427;
     /*box-shadow: inset -2px 2px 5px 5px #0D1B1E;*/
     font-family: BPtypewrite, sans-serif;
     text-align: center;
-    margin-top: 18.8vw;
-}
+    margin-top: 21.8vw;
+}/*60656F*/
 
+h4{
+
+    text-align: left;
+    font-style: italic;
+}
 
 
 #footer {
@@ -289,7 +327,6 @@ header, section, footer, aside, nav, article, figure {
     font-size: 14vw;
     max-font-size: 14vw;
     text-transform: uppercase;
-    padding-top: 0;
     padding-left: .75vw;
     padding-top: 1.25vw;
     color: #ffead0;
@@ -297,7 +334,7 @@ header, section, footer, aside, nav, article, figure {
     max-width: 14.8vw;
     align-self: center;
     margin-top: 0;
-    margin-left: 0vw;
+    margin-left: 0;
 
 }
 
