@@ -154,7 +154,7 @@ header, section, footer, aside, nav, article, figure {
 
 #sideBarList li {
     /*font-size: 1.3vw;*/
-    width: 14.9vw;
+    width: 15vw;
     padding-top: .1vw;
     padding-bottom: .1vw;
     margin: 0;
@@ -166,7 +166,7 @@ header, section, footer, aside, nav, article, figure {
 
 .sideBarList2 li {
     /*font-size: 1.3vw;*/
-    width: 14.9vw;
+    width: 15vw;
     padding-top: .1vw;
     padding-bottom: .1vw;
     margin:0;
@@ -332,10 +332,10 @@ h4{
 #openingLetter {
     text-align: center;
     font-family: "Brush Script MT", cursive;
-    font-size: 14vw;
+    font-size: 12vw;
     max-font-size: 14vw;
     text-transform: uppercase;
-    padding-left: 5.5vw;
+    padding-left: 4.5vw;
     color: #2E3138;
     position: fixed;
     max-width: 14.7vw;
