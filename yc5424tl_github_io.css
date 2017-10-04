@@ -72,7 +72,7 @@ body {
     font-size: 1vw;
     text-align: center;
     /*text-transform: uppercase;*/
-    border-right: solid .05vw #2E3138;
+    border-right: solid .05vw #E7E6F4;
     border-collapse: collapse;
     z-index: 1000;
 
@@ -154,7 +154,7 @@ header, section, footer, aside, nav, article, figure {
 
 #sideBarList li {
     /*font-size: 1.3vw;*/
-    width: 15vw;
+    width: 14.9vw;
     padding-top: .1vw;
     padding-bottom: .1vw;
     margin: 0;
@@ -166,7 +166,7 @@ header, section, footer, aside, nav, article, figure {
 
 .sideBarList2 li {
     /*font-size: 1.3vw;*/
-    width: 15vw;
+    width: 14.9vw;
     padding-top: .1vw;
     padding-bottom: .1vw;
     margin:0;
@@ -191,7 +191,7 @@ header, section, footer, aside, nav, article, figure {
     color: #CCC9E7;
     padding-right: 2vw;
     padding-top:0;
-    width: 15vw;
+    width: 14.9vw;
 
 }
 #sideBarList{
@@ -204,7 +204,7 @@ header, section, footer, aside, nav, article, figure {
     border-right: solid .1vw #2E3138;
     border-bottom: solid .05vw #2E3138;
     border-top: solid .05vw #2E3138;
-    width:15vw;
+    width:14.9vw;
     z-index: 2;
     border-collapse: collapse;
 
@@ -219,7 +219,7 @@ header, section, footer, aside, nav, article, figure {
     border-right: solid .1vw #2E3138;
     border-bottom: solid .05vw #2E3138;
     border-top: solid .05vw #2E3138;
-    width:15.0vw;
+    width:14.9vw;
     z-index: 2;
     border-collapse: collapse;
 
@@ -272,7 +272,7 @@ header, section, footer, aside, nav, article, figure {
     max-width: 84vw;
     z-index:1000;
     border-collapse: collapse;
-    margin-right: -100%;
+    margin-right: 0;
 
 
 
