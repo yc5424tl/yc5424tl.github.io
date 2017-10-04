@@ -14,15 +14,16 @@ body {
 
 
 #mainContainer{
-    float:right;
+    float:left;
     padding: 0;
-    margin-left: 15vw;
+    margin-left: 14.9vw;
     width: 84vw;
     margin-right: 0;
     position: absolute;
     border-collapse: collapse;
 
 }
+
 #content {
     margin-left: 3vw;
     margin-right: 2vw;
@@ -43,35 +44,32 @@ body {
     margin-top: 21.8vw;
     margin-bottom: 3vw;
 }
+
+
 #banner {
-    /*https://cdn.pixabay.com/photo/2010/12/13/10/31/book-2869__340.jpg*/
-    /*https://static.pexels.com/photos/590493/pexels-photo-590493.jpeg*/
     background: #400406 url(images/bookBanner4.jpg);
     padding:0;
     color: #E6EBE0;
     width:84vw;
-    height:17vw;
-    /*text-align: center;*/
+    height:17.1vw;
     position:absolute;
     margin: 0;
     z-index: 998;
-
-
+    border-bottom: solid .05vw #E7E6F4;
 }
 
 #sideBar {
+
     float:left;
     margin:0;
     position: fixed;
     width: 14.9vw;
     height: 100%;
-    padding:0;
-
-    background-color: #856A5D/*#650D1B*/;
+    padding-left:.7vw;
+    background-color: #856A5D;
     color: #2E3138;
     font-size: 1vw;
-    text-align: center;
-    /*text-transform: uppercase;*/
+   /* text-align: center;*/
     border-right: solid .05vw #E7E6F4;
     border-collapse: collapse;
     z-index: 1000;
@@ -91,10 +89,7 @@ body {
     color: #CCC9E7;
 }
 
-
-a:link{
-    color:#E7E6F4;
-}
+a:link{color:#E7E6F4;  }
 a:visited{
     color:#E7E6F4;
 }
@@ -104,42 +99,43 @@ a:hover{
 a:active{
     color:#00b9ae;
 }
-#b1{
 
-    width: 16.9vw;
+/*#b1{
+
+    width: 16.8vw;
     margin-left: -2.1vw;
-    margin-right: -100%;
-    position:absolute;
+   !* margin-right: -100%;*!
+    position:relative;
 }
 #b2{
 
-    width:16.9vw;
+    width:16.8vw;
     margin-left: 14.6vw;
-    margin-right: -100%;
+   !* margin-right: -100%;*!
     position: absolute;
 }
 #b3{
     position: absolute;
 
-    width: 16.9vw;
+    width: 16.8vw;
     margin-left: 31.4vw;
-    margin-right: -100%;
+   !* margin-right: -100%;*!
 }
 #b4{
     position: absolute;
 
-    width: 16.9vw;
+    width: 16.8vw;
     margin-left: 48.2vw;
-    margin-right: -100%;
+  !*  margin-right: -100%;*!
 }
 #b5{
     position: absolute;
 
-    width: 17.1vw;
+    width: 16.8vw;
     margin-left: 65vw;
-    margin-right: -100%;
+  !*  margin-right: -100%;*!
 
-}
+}*/
 
 .col-lg-12 {
     padding-left:0;
@@ -153,25 +149,26 @@ header, section, footer, aside, nav, article, figure {
 }
 
 #sideBarList li {
-    /*font-size: 1.3vw;*/
-    width: 14.9vw;
+
+    width: 14.8vw;
     padding-top: .1vw;
     padding-bottom: .1vw;
     margin: 0;
-    border-top: solid .05vw #2E3138;
-    border-bottom: solid .05vw #2E3138;
+    border-top: solid .025vw #E7E6F4;
+    border-bottom: solid .025vw #E7E6F4;
     border-collapse: collapse;
 
 }
 
 .sideBarList2 li {
     /*font-size: 1.3vw;*/
-    width: 14.9vw;
+
+    width: 14.8vw;
     padding-top: .1vw;
     padding-bottom: .1vw;
     margin:0;
-    border-top: solid .05vw #2E3138;
-    border-bottom: solid .05vw #2E3138;
+    border-top: solid .025vw #E7E6F4;
+    border-bottom: solid .025vw #E7E6F4;
     border-collapse: collapse;
 
 }
@@ -189,40 +186,45 @@ header, section, footer, aside, nav, article, figure {
     list-style:none;
     display: inline-flex;
     color: #CCC9E7;
-    padding-right: 2vw;
+    padding-right: 0;
+    padding-left: 3vw;
     padding-top:0;
     width: 14.9vw;
 
 }
 #sideBarList{
+
     background-color: #001427;
-    margin-top:17vw;
+    margin-top:17.0vw;
     margin-bottom: 6vw;
-    list-style:none;
-    padding:0;
+    list-style: none;
+    padding-left: 0;
     text-align: center;
-    border-right: solid .1vw #2E3138;
-    border-bottom: solid .05vw #2E3138;
-    border-top: solid .05vw #2E3138;
-    width:14.9vw;
+    border-right: solid .05vw #E7E6F4;
+    border-bottom: solid .05vw #E7E6F4;
+    border-top: solid .05vw #E7E6F4;
+    width:14.95vw;
     z-index: 2;
     border-collapse: collapse;
+
 
 }
 
 .sideBarList2{
+
     margin-top:1.25vw;
     background-color: #001427;
     list-style:none;
     padding:0;
     text-align: center;
-    border-right: solid .1vw #2E3138;
-    border-bottom: solid .05vw #2E3138;
-    border-top: solid .05vw #2E3138;
+    border-right: solid .05vw #E7E6F4;
+    border-bottom: solid .05vw #E7E6F4;
+    border-top: solid .05vw #E7E6F4;
     width:14.9vw;
     z-index: 2;
     border-collapse: collapse;
-
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .openParaButton{
@@ -263,16 +265,19 @@ header, section, footer, aside, nav, article, figure {
     font-size: 1vw;
     position: absolute;
     list-style:none;
-    margin-top: 15.85vw;
+    margin-top: 17.05vw;
+    margin-right: -1.55vw;
 
-    margin-left: 0;
-    width: 84vw;
+    width: 86vw;
     padding: 0;
     color: #2E3138;
-    max-width: 84vw;
+    max-width: 86vw;
     z-index:1000;
     border-collapse: collapse;
-    margin-right: 0;
+    display: inline;
+    margin-left:-1.55vw;
+
+
 
 
 
@@ -280,27 +285,25 @@ header, section, footer, aside, nav, article, figure {
 
 
 #topNavList li {
-    position: absolute;
-    border-collapse: collapse;
-    display: inline-flex;
-    padding: 0.1vw 3.75vw 0.15vw 6.25vw;
-   /* border-top: solid .1vw #2E3138;*/
-    border-right: solid .05vw #2E3138;
-    /*border-bottom: solid .1vw #2E3138;*/
-    /*border-left: solid .05vw #2E3138;*/
-    color: #2E3138;
-    margin: 0;
 
+
+    padding-top: .075vw;
+    padding-bottom: .075vw;
+    /*padding: 0.1vw 3.75vw 0.15vw 6.25vw;*/
+    border-top: solid .1vw #E7E6F4;
+    border-right: solid .05vw #E7E6F4;
+    border-bottom: solid .1vw #E7E6F4;
+    border-left: solid .05vw #E7E6F4;
+    color: #2E3138;
+    z-index:1000;
+    list-style:none;
     font-size: 1vw;
     text-align:center;
+    width: 16.825vw;
+    margin-left: -.6vw;
+    display: inline-block;
 
 
-
-   /* margin-left: 0;
-    margin-right:-100%;
-    margin-top: 0;
-    margin-bottom:0;
-    float:left;*/
 }
 
 
@@ -335,7 +338,7 @@ h4{
     font-size: 12vw;
     max-font-size: 14vw;
     text-transform: uppercase;
-    padding-left: 4.5vw;
+    padding-left: 5.5vw;
     color: #2E3138;
     position: fixed;
     max-width: 14.7vw;
