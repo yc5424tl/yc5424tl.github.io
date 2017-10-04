@@ -323,11 +323,11 @@ h4{
 
 #openingLetter {
     text-align: center;
-    font-family: "Quovadis", cursive;
+    font-family: "Bickham Script Pro Semibold", cursive;
     font-size: 14vw;
     max-font-size: 14vw;
     text-transform: uppercase;
-    padding-left: .75vw;
+    padding-left: 5.5vw;
     padding-top: 1.25vw;
     color: #2E3138;
     position: fixed;
