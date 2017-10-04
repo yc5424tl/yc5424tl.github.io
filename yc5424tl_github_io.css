@@ -13,6 +13,7 @@ body {
 
 
 #mainContainer{
+    float:right;
     padding-right: 0;
     padding-left: 0;
     margin-left: 15vw;
@@ -58,6 +59,7 @@ body {
 }
 
 #sideBar {
+    float:left;
     margin:0;
     position: fixed;
     width: 15vw;
