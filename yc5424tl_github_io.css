@@ -158,7 +158,8 @@ header, section, footer, aside, nav, article, figure {
     padding-top: .1vw;
     padding-bottom: .1vw;
     margin: 0;
-    border: solid .05vw #2E3138;
+    border-top: solid .05vw #2E3138;
+    border-bottom: solid .05vw #2E3138;
     border-collapse: collapse;
 
 }
@@ -169,7 +170,8 @@ header, section, footer, aside, nav, article, figure {
     padding-top: .1vw;
     padding-bottom: .1vw;
     margin:0;
-    border: solid .05vw #2E3138;
+    border-top: solid .05vw #2E3138;
+    border-bottom: solid .05vw #2E3138;
     border-collapse: collapse;
 
 }
@@ -281,10 +283,10 @@ header, section, footer, aside, nav, article, figure {
     border-collapse: collapse;
     display: inline-flex;
     padding: 0.1vw 3.75vw 0.15vw 6.25vw;
-    border-top: solid .1vw #2E3138;
+   /* border-top: solid .1vw #2E3138;*/
     border-right: solid .05vw #2E3138;
-    border-bottom: solid .1vw #2E3138;
-    border-left: solid .05vw #2E3138;
+    /*border-bottom: solid .1vw #2E3138;*/
+    /*border-left: solid .05vw #2E3138;*/
     color: #2E3138;
     margin: 0;
 
