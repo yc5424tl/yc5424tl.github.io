@@ -56,6 +56,7 @@ body {
     margin: 0;
     z-index: 998;
 
+
 }
 
 #sideBar {
@@ -200,7 +201,7 @@ header, section, footer, aside, nav, article, figure {
     border-right: solid .1vw #2E3138;
     border-bottom: solid .05vw #2E3138;
     border-top: solid .05vw #2E3138;
-    width:15vw;
+    width:14.95vw;
     z-index: 2;
     border-collapse: collapse;
 
@@ -215,7 +216,7 @@ header, section, footer, aside, nav, article, figure {
     border-right: solid .1vw #2E3138;
     border-bottom: solid .05vw #2E3138;
     border-top: solid .05vw #2E3138;
-    width:15vw;
+    width:14.9vw;
     z-index: 2;
     border-collapse: collapse;
 
