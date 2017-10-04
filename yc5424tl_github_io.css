@@ -63,7 +63,7 @@ body {
     float:left;
     margin:0;
     position: fixed;
-    width: 15vw;
+    width: 14.9vw;
     height: 100%;
     padding:0;
 
@@ -154,7 +154,7 @@ header, section, footer, aside, nav, article, figure {
 
 #sideBarList li {
     /*font-size: 1.3vw;*/
-    width: 14.7vw;
+    width: 14.6vw;
     padding-top: .1vw;
     padding-bottom: .1vw;
     margin: 0;
@@ -165,7 +165,7 @@ header, section, footer, aside, nav, article, figure {
 
 .sideBarList2 li {
     /*font-size: 1.3vw;*/
-    width: 14.8vw;
+    width: 14.7vw;
     padding-top: .1vw;
     padding-bottom: .1vw;
     margin:0;
@@ -201,7 +201,7 @@ header, section, footer, aside, nav, article, figure {
     border-right: solid .1vw #2E3138;
     border-bottom: solid .05vw #2E3138;
     border-top: solid .05vw #2E3138;
-    width:14.8vw;
+    width:14.7vw;
     z-index: 2;
     border-collapse: collapse;
 
@@ -216,7 +216,7 @@ header, section, footer, aside, nav, article, figure {
     border-right: solid .1vw #2E3138;
     border-bottom: solid .05vw #2E3138;
     border-top: solid .05vw #2E3138;
-    width:14.8vw;
+    width:14.7vw;
     z-index: 2;
     border-collapse: collapse;
 
@@ -334,7 +334,7 @@ h4{
     padding-top: 1.25vw;
     color: #2E3138;
     position: fixed;
-    max-width: 14.8vw;
+    max-width: 14.7vw;
     align-self: center;
     margin-top: 0;
     margin-left: 0;
