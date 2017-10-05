@@ -42,7 +42,7 @@ $(document).ready(function() {
     });
 });
 
-$(document).ready(function () {
+/*$(document).ready(function () {
 
     $(window).on('scroll', function () {
         if ($(window).scrollTop() >= '50vh') { // use any value lower than the navbar height, [20] is an example
@@ -60,6 +60,6 @@ $(document).ready(function () {
             });
         }
     });
-});
+});*/
 
 /* END BORROWED*/
