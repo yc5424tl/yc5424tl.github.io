@@ -1,4 +1,5 @@
 function getParaListeners() {
+    console.info("Inside getDataListeneres()");
     console.info("Adding Listeners");
     var paraArray = document.getElementsByTagName('openParaButton');
     for (var i = 0; i < paraArray.length; i++) {
