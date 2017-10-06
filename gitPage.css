@@ -1,92 +1,32 @@
-#header-background{
-    /*margin-top: 20vh;*/
+
+
+.header-image {
+    position:relative;
+    height: 50vh;
+    background: url(images/bookBanner4.jpg) no-repeat ;
     background-size: cover;
-    background: url(images/bookBanner4.jpg) no-repeat;
-    /*position: absolute;*/
+}
+
+.header-image img{
+    display:block;
     width:100%;
-    min-height: 50vh;
-
+    margin: 0 auto;
 
 }
 
 
 
-/*
-.wrapper{
-    display: flex;
-    align-items: stretch;
-}
-
-#sideBar{
-    min-width: 20vw;
-    max-width: 20vw;
-    min-height: 100vh;
-}
-
-#sidebarNav {
-!*    left: 20vw;
-    width: 0;*!
-    height: 100%;
-  !*  margin-left: -20vw;*!
-    !*overflow-y: auto;*!
-    !*overflow-x: hidden;*!
-    width: 20vw;
-*/
-
-/*}*/
-
-/*
-#sidebar.active{
-    margin-left: -20vw;
-}
-
-
-!*https://bootstrapious.com/p/bootstrap-sidebar*!
-a[data-toggle="collapse"] {
-    position: relative;
-}
-
-a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
-    content: '\e259';
-    display: block;
-    position: absolute;
-    right: 20px;
-    font-family: 'Glyphicons Halflings', sans-serif ;
-    font-size: 0.6em;
-}
-
-a[aria-expanded="true"]::before {
-    content: '\e260';
-}
-
-
-@media (max-width: 768px) {
-    #sidebar {
-        margin-left: -20vw;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-}*/
 
 /*SIDEBAR CODE BORROWED*/
-#bodyContainer{
-
-
-
+.navbar-brand{
+    color: #268bd2;
 }
 #pageContainer{
     background-color: #002b36;
 }
-#sidebarParent{
-   /* border: solid .025vw red;*/
-    /*margin-left: 20vw;*/
 
-}
-
-#navbarHeader {
-
-
+.navbar-header {
+    color: #268bd2;
 }
 
 body {
@@ -104,26 +44,15 @@ body {
     padding-right: 0;
     padding-top: 20px;
 
- /*   margin-left: -20vw;*/
- /*   position: fixed;*/
-
-
-
-  /*  border: solid .025vw black;*/
-
 }
 #headerText {
-  /*  margin-left: 0;
-    padding-left: 0;*/
     background-color: #002b36;
-    color: #fdf6e3;
+    color: #00b9ae;
 }
 
 #pageContent{
-    /*padding-left:5vw;*/
     border-left: solid 0.025vw white;
     text-align: justify;
-
     font-family: 'Verdana', monospace;
     background-color: #002b36;
     color:#fdf6e3;
@@ -136,20 +65,15 @@ body {
     border:0 #f2f2f2 solid;
     border-bottom-width:1px;
 }
-
-a:link{color:#fdf6e3;  }
-a:visited{
-    color:#fdf6e3;
-}
-a:hover{
-    color:#002b36;
-}
-a:active{
-    color:#00b9ae;
-}
+a:link{color:#fdf6e3;}
+a:visited{color:#fdf6e3;}
+a:hover{color:#002b36;}
+a:active{color:#00b9ae;}
 a{
     font-family: 'Verdana', sans-serif;
     font-size: 16pt;
+
+    &:link{}
 }
 
 .button {
@@ -195,13 +119,7 @@ a{
     }
     #sidebar {
         padding-top:0;
-      /*  font-family: 'Verdana', monospace;
-        font-size: 16pt;*/
-
 
     }
-  /*  #sidebarParent{
-
-    }*/
-}
+ }
 /* END SIDEBAR BORROWED*/

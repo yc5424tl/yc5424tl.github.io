@@ -35,7 +35,6 @@ function toggleSidebar() {
     }
 }*/
 
-/* BORROWED FOR SIDEBAR */
 $(document).ready(function() {
     $('[data-toggle=offcanvas]').click(function() {
         $('.row-offcanvas').toggleClass('active');
