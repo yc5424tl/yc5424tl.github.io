@@ -200,12 +200,12 @@
             transition: all 0.25s ease-out;
         }
 
-        .row-offcanvas-right
+        .row-offcanvas-right,
         .sidebar-offcanvas {
             right: -15vw;
         }
 
-        .row-offcanvas-left
+        .row-offcanvas-left,
         .sidebar-offcanvas {
             left: -15vw;
         }

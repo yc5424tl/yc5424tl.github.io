@@ -25,8 +25,6 @@ body {
 }
 
 #content {
-    margin-left: 3vw;
-    margin-right: 2vw;
     padding-right: 0;
     padding-left: 0;
     width: 78vw;
@@ -41,8 +39,7 @@ body {
     -webkit-box-shadow: inset -2px 2px 5px 5px #2E3138;
     font-family: BPtypewrite, sans-serif;
     text-align: center;
-    margin-top: 21.8vw;
-    margin-bottom: 3vw;
+    margin: 21.8vw 2vw 3vw 3vw;
 }
 
 
@@ -290,10 +287,9 @@ header, section, footer, aside, nav, article, figure {
     padding-top: .075vw;
     padding-bottom: .075vw;
     /*padding: 0.1vw 3.75vw 0.15vw 6.25vw;*/
-    border-top: solid .1vw #E7E6F4;
-    border-right: solid .05vw #E7E6F4;
-    border-bottom: solid .1vw #E7E6F4;
-    border-left: solid .05vw #E7E6F4;
+    border: .1vw solid #E7E6F4;
+    border-right-width: .05vw;
+    border-left-width: .05vw;
     color: #2E3138;
     z-index:1000;
     list-style:none;
