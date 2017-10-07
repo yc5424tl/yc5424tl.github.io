@@ -98,12 +98,16 @@ a{
         transition: all 0.25s ease-out;
     }
     .row-offcanvas-right
-    .sidebar-offcanvas {
+    .sidebar-offcanvas{
+        right:
+    }
+    .sidebar-rollout-offcanvas{
         right: -20vw;
     }
 
     .row-offcanvas-left
-    .sidebar-offcanvas {
+    .sidebar-offcanvas
+    .sidebar-rollout-offcanvas{
         left: -20vw;
     }
     .row-offcanvas-right.active {
@@ -112,10 +116,21 @@ a{
     .row-offcanvas-left.active {
         left: 20vw;
     }
-    .sidebar-offcanvas {
+    .sidebar-offcanvas
+    {
         position: absolute;
         top: 0;
         width: 20vw;
+    }
+
+    .sidebar-rollout-offcanvas{
+        position:absolute;
+        top: 0;
+        width:20vw;
+    }
+
+    #sidebar-rollout{
+        padding-top:0;
     }
     #sidebar {
         padding-top:0;

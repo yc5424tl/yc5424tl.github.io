@@ -1,12 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+    display:block;
+    border:0;
+    border-spacing:0;
+}
+
+    a {
+
+        font-weight: 900;
+        text-transform: capitalize;
+    }
+
+    .button{
+        color:#883400
+    }
+
 
     /* --------------BANNER IMAGE-------------- */
 
 
     .banner-img {
         position:relative;
-        height:40vh;
+        height:35vh;
         background:url(images/bookBanner4.jpg) no-repeat;
         background-size:cover;
+        z-index: 1000;
     }
 
     .banner-img img{
@@ -16,6 +35,17 @@
     }
 
 
+    /*----IFRAME------*/
+
+    #pageFrame {
+        float:right;
+        height:100%;
+        width:85.25%;
+        padding-right:-85vw;
+        position:fixed;
+        margin:0 0 0 -2.75%;
+    }
+
 
 
 
@@ -24,58 +54,137 @@
     /*------trials--------*/
 
 
-        #mainContent{
-            float:right;
-        }
+    #mainContent{
+        float:right;
+    }
 
     /*------------*/
 
 
 
 
+    #topbar-navbar {
+        height:5%;
+        max-height:5%;
+    }
+
+    /*-----------BUTTONS-----------*/
+
+    .navbar-btn, .dropdown, .dropdown-menu{
+        -webkit-transition-duration: 0.4s;
+        -moz-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        background-color: #212121;
+        color: #9EFFD3;
+    }
+    .navbar-btn:hover {
+        background-color: #883400;
+        color: #212121;
+    }
+
+    .dropdown:hover{
+        background-color: #44A0A9;
+        color:#FFF;
+    }
+
+    .dropdown-menu-navbar-btn:hover{
+        background-color: #44A0A9;
+        color: #212121;
+    }
+
+    .dropdown-menu li a:link {
+        color:#44A0A9;
+    }
+    .nav.navbar-nav li a {
+        color: #808080;
+    }
 
 
-
-
-
-
+    a:link{
+        color: #9EFFD3;
+    }
+    a:hover{
+        color: #212121;
+    }
+    a:visited{
+        color: #9EFFD3;
+    }
+    a:selected{
+        color: #44A0A9;
+    }
 
 
     /* --------------SIDEBAR--------------------*/
 
+    #sidebar-row {
+        height:100%;
+        position:fixed;
+        width:15vw;
+        margin:-35vh 0 0 0;
+        padding:0;
+        overflow: hidden;
+    }
 
-            #sidebar-navbar {
-                height:100%;
-                width:14vw;
-                position:fixed;
-            }
+    #sidebar-name {
+        border-top: solid #44A0A9 10vh;
+        margin-top:5.25%;
+        width:15vw;
+
+    }
+    #sidebar-email {
+        border-bottom: solid #44A0A9 10vh;
+        width:15vw;
+
+    }
+
+    #home-button {
+        margin-top: 7%;
+    }
+
+    #sidebar-navbar {
+        height:100%;
+        width:15vw;
+    }
+
+    /*--    SIDEBAR-COL       --*/
+    #sidebar{
+        height:100%;
+        width:15vw;
+        margin-left: -10%;
+        padding-left: 10%;
+        margin-right: 85%;
+
+    }
+
+    /*----SIDEBAR NAV------*/
+     #sidebar .nav {
+
+         width: 15vw;
+         height:100%;
 
 
-            #sidebar {
-                height:100%;
-                padding-right:0;
-                width: 20vw;
-                margin-right: 1vw;
+     }
 
-            }
+     /*----SIDEBAR TEXT-----*/
 
-
-            /*----SIDEBAR NAV------*/
-             #sidebar .nav {
-                 width:inherit;
-                 height:100%;
-             }
+    .navbar li{
+        font-weight: 900;
+        font-variant: all-petite-caps;
+        font-size: 12pt;
+        width:100%;
+    }
 
 
-            /*----SIDEBAR LIST-------*/
-            #sidebar .nav-item {
-                margin:0;
-                padding:1vh 50% 0 0;
-            }
+    /*----SIDEBAR LIST-------*/
 
-            #sidebar-list  {
-                padding-bottom: 1vh;
-            }
+
+
+    .nav-item {
+        margin:0;
+        padding:0 0 0 0;
+    }
+
+
 
 
 
@@ -93,23 +202,23 @@
 
         .row-offcanvas-right
         .sidebar-offcanvas {
-            right: -20vw;
+            right: -15vw;
         }
 
         .row-offcanvas-left
         .sidebar-offcanvas {
-            left: -20vw;
+            left: -15vw;
         }
         .row-offcanvas-right.active {
-            right: 20vw;
+            right: 15vw;
         }
         .row-offcanvas-left.active {
-            left: 20vw;
+            left: 15vw;
         }
         .sidebar-offcanvas {
             position: absolute;
             top: 0;
-            width: 20vw;
+            width: 15vw;
         }
         #sidebar {
             padding-top:0;
