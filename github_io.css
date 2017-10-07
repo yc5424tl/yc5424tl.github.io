@@ -109,7 +109,7 @@
     a:visited{
         color: #9EFFD3;
     }
-    a:selected{
+    a:active{
         color: #44A0A9;
     }
 
