@@ -6,6 +6,10 @@
     border-spacing:0;
 }
 
+    body{
+        background: #191919;
+    }
+
     a {
 
         font-weight: 900;
@@ -14,6 +18,19 @@
 
     .button{
         color:#883400
+    }
+
+    #text-wall {
+        margin-top:80vh;
+        font-variant: all-small-caps;
+        height:50vh;
+        padding-top:200vh;
+
+    }
+
+    #mainContent{
+        margin-left:15vw;
+       position:fixed;
     }
 
 
@@ -38,10 +55,9 @@
     /*----IFRAME------*/
 
     #pageFrame {
-        float:right;
+
         height:100%;
-        width:85.25%;
-        padding-right:-85vw;
+        width:90%;
         position:fixed;
         margin:0 0 0 -2.75%;
     }
