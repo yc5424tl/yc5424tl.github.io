@@ -41,6 +41,24 @@ $(document).ready(function() {
     });
 });
 
+
+var lowerFrame = document.getElementById("lowerFrame");
+var upperFrame = document.getElementById("pageFrame");
+
+window.onload(iframeResize(lowerFrame));
+window.onload(iframeResize(upperFrame));
+
+function iframeResize(id) {
+    var resizeHeight;
+    var resizeWidth;
+    if(document.getElementById) {
+        resizeHeight=document.getElementById(id).contentWindow.document.body.scrollHeight;
+        resizeWidth=document.getElementById(id).contentWindow.document.body.scrollWidth;
+    }
+    document.getElementById(id).height=resizeHeight + "px";
+    document.getElementById(id).width=resizeWidth + "px";
+}
+
 /*$(document).ready(function () {
 
     $(window).on('scroll', function () {
