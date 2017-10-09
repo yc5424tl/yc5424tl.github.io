@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document Entry</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/formPage.css">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/formPage.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+        <header>
+            <h2>File Details</h2>
+            <h4>Entering Local Files in the System</h4>
+        </header>
+
+        <!--FORM START--->
+        <form action="#">
+
+
+            <!---NAME--->
+            <div class="field group">
+                <label for="title" class="label">Title:</label>
+                <div class="field">
+                    <input name="title" id="title" type="text" value="" placeholder="Enter Title Here" required>
+                </div>
+            </div>
+
+
+            <!---CREATED BY--->
+            <div class="field group">
+                <label for="author1" class="label">Created By:</label>
+                <div class="field">
+                    <input name="author1" id="author1" type="text" value="" placeholder="Enter Creator's Name Here" required>
+                </div>
+            </div>
+
+            <!---YEAR--->
+            <div class="field group">
+                <label for="year" class="label">Year:</label>
+                <div class="field">
+                    <input name="year" id="year" type="number" min=0 max=getCurrentYear() maxlength="4"> <!-- only works for AD, need radio/cb to allow for BC -->
+                </div>
+            </div>
+
+            <!---Version--->
+            <div class="field group">
+                <label for="version" class="label">Version:</label>
+                <div class="field">
+                    <input name="version" id="version" type="text" value="" maxlength="50" placeholder="Enter Version/Edition">
+                </div>
+            </div>
+
+            <!---PUBLISHER--->
+            <div class="field group">
+                <label for="publisher" class="label">Publisher:</label>
+                <div class="field">
+                    <input name="publisher" id="publisher" type="text" value="" placeholder="Enter Publisher">
+                </div>
+            </div>
+
+            <!---IDENTIFICATION CODE--->
+            <div class="field group">
+                <label for="id-code" class="label">ID Code:</label>
+                <div class="field">
+                    <input name="id-code" id="id-code" type="text" value="" placeholder="ISBN/Serial#/Etc" maxlength="100">
+                </div>
+            </div>
+
+            <!---SUBJECT--->
+            <!--<select type=multiple> -->
+            <div class="form group">
+                <div class="dropdown">
+                    <a id="dropdownLabel" role="button" data-toggle="dropdown" class="btn btn-primary" href="#">
+                        Select Subject<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu multi-level" role="menu">
+                        <li class="dropdown-nested">
+                            <a tabindex="-1" href="#">Physical Science</a>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="#">Physical Science</a></li>
+                                <li class="dropdown-nested">
+                                    <a tabindex="-1" href="#">Biology</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="field-parent"><a href="#">Biology</a></li>
+                                        <li><a href="#">Aerobiology</a></li>
+                                        <li><a href="#">Agiculture</a></li>
+                                        <li class="dropdown-nested">
+                                            <a tabindex="-1" href="#">Anatomy</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="field-parent"><a href="#">Anatomy</a></li>
+                                                <li><a href="#">Human Anatomy</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Astrobiology</a></li>
+                                        <li><a href="#">Biochemistry</a></li>
+                                        <li><a href="#">Bioengineering</a></li>
+                                        <li><a href="#">Biogeography</a></li>
+                                        <li><a href="#">Bioinformatics</a></li>
+                                        <li><a href="#">Biomathematics</a></li>
+                                        <li><a href="#">Biomechanics</a></li>
+                                        <li><a href="#">Biomedical Research</a></li>
+                                        <li><a href="#">Biophysics</a></li>
+                                        <li><a href="#">Biotechnology</a></li>
+                                        <li><a href="#">Building Biology</a></li>
+                                        <li><a href="#">Botany</a></li>
+                                        <li><a href="#">Cell Biology</a></li>
+                                        <li><a href="#">Conservation Biology</a></li>
+                                        <li><a href="#">Chronobiology</a></li>
+                                        <li><a href="#">Cryobiology</a></li>
+                                        <li class="dropdown-nested">
+                                            <a tabindex="-1" href="#">Developmental Biology</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="field-parent"><a href="#">Developmental Biology</a></li>
+                                                <li><a href="#">Embryology</a></li>
+                                                <li><a href="#">Gerontology</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Ecology</a></li>
+                                        <li><a href="#">Environmental Biology</a></li>
+                                        <li><a href="#">Epidemiology</a></li>
+                                        <li class="dropdown-nested">
+                                            <a tabindex="-1" href="#">Evolution</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="field-parent"><a href="#">Evolutionary Biology</a></li>
+                                            </ul>
+
+                                </li>
+                                <li class="dropdown-nested">
+                                    <a tabindex="-1" href="#">Physics</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="field-parent"><a href="#">Physics</a></li>
+                                        <li class="dropdown-nested">
+                                            <a tabindex="-1" href="#">Astronomy</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="field-parent"><a href="#">Astronomy</a></li>
+                                                <li><a href="#">Astrodynamics</a></li>
+                                                <li><a href="#">Astrometry</a></li>
+                                                <li><a href="#">Cosmology</a></li>
+                                                <li><a href="#">Extragalactic Astronomy</a></li>
+                                                <li><a href="#">Galactic Astronomy</a></li>
+                                                <li><a href="#">Physical Cosmology</a></li>
+                                                <li><a href="#">Planetary Science</a></li>
+                                                <li><a href="#">Stellar Astronomy</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Acoustics</a></li>
+                                        <li><a href="#">Astrophysics</a></li>
+                                        <li class="dropdown-nested">
+                                            <a tabindex="-1" href="#">Agrophysics</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="field-parent"><a href="#">Agrophysics</a></li>
+                                                <li><a href="#">Soil Physics</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Atmospheric Physics</a></li>
+                                        <li class="dropdown-nested">
+                                            <a tableindex="-1" href="#">Biophysics</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="field-parent"><a href="#">Biophysics</a></li>
+                                                <li><a href="#">Medical Physics</a></li>
+                                                <li><a href="#">Neurophysics</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Chemical Physics </a></li>
+                                        <li><a href="#">Atomic, Molecular, and Optical Physics </a></li>
+                                        <li><a href="#">Computational Physics </a></li>
+                                        <li><a href="#">Condensed Matter Physics</a></li>
+                                        <li><a href="#">Cryogenics</a></li>
+                                        <li><a href="#">Dynamics</a></li>
+                                        <li><a href="#">Econophysics</a></li>
+                                        <li><a href="#">Electromagnetism</a></li>
+                                        <li><a href="#">Geophysics</a></li>
+                                        <li><a href="#">Material Physics</a></li>
+                                        <li><a href="#">Mathematical Physics</a></li>
+                                        <li class="dropdown-nested">
+                                            <a tabindex="-1" href="#">Mechanics</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="field-parent"><a href="#">Mechanics</a></li>
+                                                <li><a href="#">Biomechanics</a></li>
+                                                <li><a href="#">Classical Mechanics</a></li>
+                                                <li><a href="#">Continuum Mechanics</a></li>
+                                                <li><a href="#">Fluid Mechanics</a></li>
+                                                <li><a href="#">Quantum Mechanics</a></li>
+                                                <li><a href="#">Thermodynamics</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Nuclear Physics</a></li>
+                                        <li><a href="#">Optics</a></li>
+                                        <li><a href="#">Particle Physics</a></li>
+                                        <li><a href="#">Psychophysics</a></li>
+                                        <li><a href="#">Plasma Physics</a></li>
+                                        <li><a href="#">Polymer Physics</a></li>
+                                        <li><a href="#">Quantum Physics</a></li>
+                                        <li><a href="#">Relativity</a></li>
+                                        <li><a href="#">Statics</a></li>
+                                        <li><a href="#">Solid State Physics</a></li>
+                                        <li><a href="#">Vehicle Dynamics</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+        <!-- repeat above for author (a dropdown for multiple? or add button?
+            year, edition/version, publisher, isbn, file location, subject (add subject button) -->
+</body>
+</html>
