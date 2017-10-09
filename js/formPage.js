@@ -1,3 +1,8 @@
+
+
 function getCurrentYear(){
-    return new Date().getFullYear()
+    var maxField = document.getElementById('yearID');
+    var year = new Date().getFullYear();
+    maxField.setAttribute('max', year.toString());
 }
+Window.onload(getCurrentYear());

@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="../font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/formPage.css">
-    <script src="../js/jquery-3.2.1.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/formPage.js"></script>
+
 </head>
 <body>
 
@@ -25,59 +23,62 @@
 
 
             <!---NAME--->
-            <div class="field group">
-                <label for="title" class="label">Title:</label>
-                <div class="field">
-                    <input name="title" id="title" type="text" value="" placeholder="Enter Title Here" required>
+            <div class="form-group row">
+                <label for="title" class="col-2 col-form-label form-control-label">Title:</label>
+                <div class="col-10">
+                    <input name="title" id="title" type="text" class="form-control form-control-danger" value="" placeholder="required" maxlength="50" required>
+                    <div class="form-control-feedback">Required: Title of Work</div>
                 </div>
             </div>
 
 
             <!---CREATED BY--->
-            <div class="field group">
-                <label for="author1" class="label">Created By:</label>
-                <div class="field">
-                    <input name="author1" id="author1" type="text" value="" placeholder="Enter Creator's Name Here" required>
+            <div class="form-group row">
+                <label for="author1" class="col-2 col-form-label">Created By:</label>
+                <div class="col-10">
+                    <input name="author1" id="author1" type="text" class="form-control" value="" placeholder="required" minlength="1" maxlength="100" multiple required>
                 </div>
             </div>
 
             <!---YEAR--->
-            <div class="field group">
-                <label for="year" class="label">Year:</label>
-                <div class="field">
-                    <input name="year" id="year" type="number" min=0 max=getCurrentYear() maxlength="4"> <!-- only works for AD, need radio/cb to allow for BC -->
+            <div class="form-group row">
+                <label for="yearID" class="col-2 col-form-label">Year:</label>
+                <div class="col-10">
+                    <input name="year" id="yearID" type="number" class="form-control" min=0 max="" maxlength="4" value="" placeholder="optional -- Gregorian numerical value only"> <!-- only works for AD, need radio/cb to allow for BC -->
                 </div>
             </div>
 
             <!---Version--->
-            <div class="field group">
-                <label for="version" class="label">Version:</label>
-                <div class="field">
-                    <input name="version" id="version" type="text" value="" maxlength="50" placeholder="Enter Version/Edition">
+            <div class="form-group row">
+                <label for="version" class="col-2 col-form-label">Version:</label>
+                <div class="col-10">
+                    <input name="version" id="version" type="text" class="form-control" value="" maxlength="50" placeholder="optional">
                 </div>
             </div>
 
             <!---PUBLISHER--->
-            <div class="field group">
-                <label for="publisher" class="label">Publisher:</label>
-                <div class="field">
-                    <input name="publisher" id="publisher" type="text" value="" placeholder="Enter Publisher">
+            <div class="form-group row">
+                <label for="publisher" class="col-2 col-form-label">Publisher:</label>
+                <div class="col-10">
+                    <input name="publisher" id="publisher" type="text" class="form-control" value="" placeholder="optional">
                 </div>
             </div>
 
             <!---IDENTIFICATION CODE--->
-            <div class="field group">
-                <label for="id-code" class="label">ID Code:</label>
-                <div class="field">
-                    <input name="id-code" id="id-code" type="text" value="" placeholder="ISBN/Serial#/Etc" maxlength="100">
+            <div class="form-group row">
+                <label for="id-code" class="col-2 col-form-label">ID Code:</label>
+                <div class="col-10">
+                    <input name="id-code" id="id-code" type="text" class="form-control" value="" placeholder="ISBN - Serial # - ETC" maxlength="100">
                 </div>
             </div>
 
             <!---SUBJECT--->
             <!--<select type=multiple> -->
-            <div class="form group">
-                <div class="dropdown">
-                    <a id="dropdownLabel" role="button" data-toggle="dropdown" class="btn btn-primary" href="#">
+            <div class="form-group row">
+                <label for="subject-dropdown" class="col-2 col-form-label">Subject:</label>
+                <div>
+                <div class="dropdown form-control" id="subject-dropdown">
+                    <a id="dropdownLabel" role="button" data-toggle="dropdown" class="btn btn-default" href="#">
                         Select Subject<span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu multi-level" role="menu">
@@ -86,6 +87,7 @@
                             <ul class="dropdown-menu">
                                 <li><a tabindex="-1" href="#">Physical Science</a></li>
                                 <li class="dropdown-nested">
+                                    <!---BIOLOGY--->
                                     <a tabindex="-1" href="#">Biology</a>
                                     <ul class="dropdown-menu">
                                         <li class="field-parent"><a href="#">Biology</a></li>
@@ -132,17 +134,135 @@
                                                 <li class="dropdown-nested">
                                                     <a tabindex="-1" href="#">Evolutionary Biology</a>
                                                     <ul class="dropdown-menu">
-                                                        <li class="field-parent"><a href="Evolutionary Biology"></a></li>
+                                                        <li class="field-parent"><a href=#>Evolutionary Biology></a></li>
                                                         <li><a href="#">Evolutionary Developmental Biology</a></li>
                                                     </ul>
                                                 </li>
-                                                
+                                                <li class="dropdown-nested">
+                                                    <a tabindex="-1" href="#">Paleobiology</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="field-parent"><a href="#">Paleobiology</a></li>
+                                                        <li><a href="#">Paleontology</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-nested">
+                                            <a tabindex="-1" href="#">Genetics</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="field-parent"><a href="#">Genetics</a></li>
+                                                <li><a href="#">Genomics</a></li>
+                                                <li><a href="#">Proteomics</a></li>
+                                                <li><a href="#">Population Genetics</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Histology</a></li>  <!--HISTOLOGY #1-->
+                                        <li><a href="#">Integrative Biology</a></li>
+                                        <li><a href="#">Limnology</a></li>
+                                        <li><a href="#">Marine Biology</a></li>
+                                        <li class="dropdown-nested">
+                                            <a tabindex="-1" href="#">Microbiology</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="field-parent"><a href="#">Microbiology</a></li>
+                                                <li><a href="#">Bacteriology</a></li>
+                                                <li><a href="#">Virology</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-nested">
+                                            <a tabindex="-1" href="#">Molecular Biology</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="field-parent"><a href="#">Molecular Biology</a></li>
+                                                <li><a href="#">Structural Biology</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Morphology</a></li>
+                                        <li><a href="#">Mycology</a></li>
+                                        <li><a href="#">Oceanography</a></li>
+                                        <li><a href="#">Oncology</a></li>
+                                        <li class="dropdown-nested">
+                                            <a tabindex="-1" href="#">Population Biology</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="field-parent"><a href="#">Population Biology</a></li>
+                                                <li><a href="#">Population Ecology</a></li>
+                                                <li><a href="#">Population Genetics</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Pathology</a></li>
+                                        <li><a href="#">Parasitology</a></li>
+                                        <li><a href="#">Pharmacology</a></li>
+                                        <li class="dropdown-nested">
+                                            <a tabindex="-1" href="#">Physiology</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="field-parent"><a href="#">Physiobiology</a></li>
+                                                <li><a href="#">Immunology</a></li>
+                                                <li><a href="#">Kenesiology</a></li>
+                                                <li class="dropdown-nested">
+                                                    <a tabindex="-1" href="#">Neurobiology</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="field-parent"><a href="#">Neurobiology</a></li>
+                                                        <li><a href="#">Neuroscience</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Histology</a></li>    <!--HISTOLOGY #2-->
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Phytopathology</a></li>
+                                        <li><a href="#">Psychobiology</a></li>
+                                        <li><a href="#">Sociobiology</a></li>
+                                        <li class="dropdown-nested">
+                                            <a tabindex="-1" href="#">Systematics</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="field-parent"><a href="#">Systematics</a></li>
+                                                <li><a href="#">Cladistics</a></li>
+                                                <li><a href="#">Phylogeny</a></li>
+                                                <li><a href="#">Taxonomy</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown-nested">
+                                            <a tabindex="-1" href="#">Zoology</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="field-parent"><a href="#">Zoology</a></li>
+                                                <li class="dropdown-nested">
+                                                    <a tabindex="-1" href="#">Arachnology</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="field-parent"><a href="#">Arachnology</a></li>
+                                                        <li class="dropdown-nested">
+                                                            <a tabindex="-1" href="#">Acarology</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li class="field-parent"><a href="#">Acarology</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown-nested">
+                                                    <a tabindex="-1" href="#">Entomology</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="field-parent"><a href="#">Entomology</a></li>
+                                                        <li><a href="#">Myrmecology</a></li>
+                                                        <li><a href="#">Coleopterology</a></li>
+                                                        <li><a href="#">Lepidopterology</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Ethology</a></li>
+                                                <li><a href="#">Helminthology</a></li>
+                                                <li><a href="#">Herpetology</a></li>
+                                                <li><a href="#">Ichthyology</a></li>
+                                                <li><a href="#">Malacology</a></li>
+                                                <li class="dropdown-nested">
+                                                    <a tabindex="-1" href="#">Mammology</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="field-parent"><a href="#">Mammology</a></li>
+                                                        <li><a href="#">Cetology</a></li>
+                                                        <li><a href="#">Physical Anthropology</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Nematology</a></li>
+                                                <li><a href="#">Ornithology</a></li>
                                             </ul>
                                         </li>
                                     </ul>
-
-                                </li>
-                                <li class="dropdown-nested">
+                                </li><!---END BIOLOGY--->
+                                <li class="dropdown-nested"><!---PHYSICS--->
                                     <a tabindex="-1" href="#">Physics</a>
                                     <ul class="dropdown-menu">
                                         <li class="field-parent"><a href="#">Physics</a></li>
@@ -171,7 +291,7 @@
                                         </li>
                                         <li><a href="#">Atmospheric Physics</a></li>
                                         <li class="dropdown-nested">
-                                            <a tableindex="-1" href="#">Biophysics</a>
+                                            <a tabindex="-1" href="#">Biophysics</a>
                                             <ul class="dropdown-menu">
                                                 <li class="field-parent"><a href="#">Biophysics</a></li>
                                                 <li><a href="#">Medical Physics</a></li>
@@ -213,11 +333,21 @@
                                         <li><a href="#">Solid State Physics</a></li>
                                         <li><a href="#">Vehicle Dynamics</a></li>
                                     </ul>
-                                </li>
+                                </li><!---END PHYSICS--->
                             </ul>
                         </ul>
                     </div>
                 </div>
+
+
+                <div class=" row">
+                    <label class="custom-file col-2 col-form-label" id="fileLabel">File Location:
+                        <input type="file" id="file-input" class="custom-file-input col-10 btn btn-default"  required >
+                        <span class="custom-file-control" id="file-control"></span>
+                    </label>
+                </div>
+                </div>
+
             </form>
         </div>
     </div>
@@ -229,4 +359,7 @@
         <!-- repeat above for author (a dropdown for multiple? or add button?
             year, edition/version, publisher, isbn, file location, subject (add subject button) -->
 </body>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/formPage.js"></script>
 </html>
