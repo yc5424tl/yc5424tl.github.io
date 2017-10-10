@@ -1,12 +1,14 @@
 
 
 
+/*
 
 $(document).ready(function() {
     $('[data-toggle=offcanvas]').click(function() {
         $('.row-offcanvas').toggleClass('active');
     });
 });
+*/
 
 
 function getCurrentYear(){
@@ -14,6 +16,42 @@ function getCurrentYear(){
     var year = new Date().getFullYear();
     maxField.setAttribute('max', year.toString());
 }
+
+
+
+
+
+
+/*
+function getButtonListeners() {
+
+    console.info("in getButtonListeners");
+    var buttons = document.getElementsByClassName("navbar-btn nav-item");
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", toggleDivs())
+    }
+}
+
+
+function toggleDivs() {
+    console.info("In toggle divs");
+    var buttons = document.getElementsByClassName('.div-toggle');
+    for(var i = 0; i < buttons.length; i++) {
+        console.info("in loop, button at i = " + button[i]);
+        buttons[i].setAttribute(collapse, 'hide');
+    }
+    var buttonClicked = event.target || event.srcElement;
+    buttonClicked.setAttribute(collapse, 'show');
+}
+
+
+
+
+
+
+Window.addEventListener('load', getButtonListeners());
+Window.addEventListener('load', toggleDivs());
+*/
 
 
 

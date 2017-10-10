@@ -253,51 +253,52 @@ a {
 /* -------------SIDEBAR COLLAPSE--------------*/
 
 @media screen and (max-width: 767px) {
-    .navbar nav {
-        position:relative;
+    .row-offcanvas {
+        position: relative;
         -webkit-transition: all 0.25s ease-out;
         -moz-transition: all 0.25s ease-out;
         transition: all 0.25s ease-out;
     }
-
-    #upperFrameDiv {
-        margin-left: 0;
-    }
-
-    #upperFrameDiv,
     .row-offcanvas-right,
-    .sb-offcanvas {
+    .sb-offcanvas{
+        right: -15vw;
+    }
+    .sidebar-rollout-offcanvas{
         right: -15vw;
     }
 
-    #upperFrameDiv,
     .row-offcanvas-left,
-    .sb-offcanvas {
+    .sb-offcanvas,
+    .sidebar-rollout-offcanvas{
         left: -15vw;
     }
-    #upperFrameDiv,
-    .row-offcanvas-right.active
-    {
+    .row-offcanvas-right.active {
         right: 15vw;
     }
-    #upperFrameDiv,
-    .row-offcanvas-left.active
-    {
+    .row-offcanvas-left.active {
         left: 15vw;
     }
-    .sb-offcanvas {
+    .sb-offcanvas
+    {
         position: absolute;
         top: 0;
         width: 15vw;
+    }
+
+    .sidebar-rollout-offcanvas{
+        position:absolute;
+        top: 0;
+        width:15vw;
+    }
+
+    #sidebar-rollout{
+        padding-top:0;
     }
     #sb-div-col {
         padding-top:0;
 
     }
-
-
 }
-
 
     /*==================================================================================================================
                                                        PAGE: PHYSICAL SCI
@@ -321,7 +322,7 @@ a {
 #modal-earth-sci,
 #modal-physics
 {
-    max-width: calc(100vw - 1px);
+    max-width: calc(100vw - 30px);
     overflow-x: auto;
     position:fixed;
     background-color:#000000;
@@ -329,7 +330,7 @@ a {
 }
 
 .modal-dialog{
-    width: calc(100vw - 1px);
+    width: calc(100vw - 40px);
     color: #44A0A9;
     height:100%;
 }
