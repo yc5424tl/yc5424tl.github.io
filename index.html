@@ -16,12 +16,6 @@
 
 <body>
 
-
-
-
-
-
-
         <div class="flex-container-fluid">
             <div class="row">
                 <div class="banner-img">
@@ -43,17 +37,17 @@
                     </div>
                 </div>
             </div>
-            <div class="row row-offcanvas row-offcanvas-left" id="sidebar-row">
-                <div class="navbar navbar-inverse sidebar" id="sidebar-navbar">
-                    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2 sidebar" id="sidebar" role="navigation">
+            <div class="row row-offcanvas row-offcanvas-left" id="sb-row">
+                <div class="navbar navbar-inverse sidebar" id="sb-navbar">
+                    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2 sidebar" id="sb-div-col" role="navigation">
                         <ul class="nav navbar-nav " ><!-- id="sidebar-list"-->
 
-                            <li class="navbar-btn nav-item " id="sidebar-name"><a href="#">Jacob Boline</a></li>
-                            <li class="navbar-btn nav-item " id="sidebar-email"><a href="#">jkboline@gmail.com</a></li>
-                            <li class="navbar-text nav-item" id="sidebar-insert"></li>
-                            <li class="navbar-btn nav-item" id="home-button"><a href="pages/project-info.html">About</a></li>
+                            <li class="navbar-btn nav-item " id="sb-btn-name"><a href="#">Jacob Boline</a></li>
+                            <li class="navbar-btn nav-item " id="sb-btn-mail"><a href="#">jkboline@gmail.com</a></li>
+                            <li class="navbar-text nav-item" id="sb-spanner"></li>
+                            <li class="navbar-btn nav-item" id="sb-btn-about"><a href="pages/project-info.html">About</a></li>
                             <li class="dropdown nav-item">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Fields of Study<span class="caret"></span></a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Fields of Science<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li class="navbar-btn nav-item"><a href="pages/physicalPage.html" >Physical Sciences</a></li>
                                     <li class="navbar-btn nav-item"><a href="pages/socialPage.html" >Social Sciences</a></li>
@@ -61,8 +55,8 @@
                                     <li class="navbar-btn nav-item"><a href="pages/appliedPage.html" >Applied Sciences</a></li>
                                 </ul>
                             </li>
-                            <li class="navbar-btn nav-item"><a href="pages/formPage.html">Sample Form</a></li>
-                            <li class="navbar-btn nav-item"><a href="pages/codePage.html">Site Code</a></li>
+                            <li class="navbar-btn nav-item"><a href="pages/formPage.html">Add File Form</a></li>
+                            <li class="navbar-btn nav-item"><a href="pages/codePage.html">Project Source Code</a></li>
                         </ul>
                     </div>
                 </div>
@@ -74,12 +68,12 @@
 
         <!---------- IFRAMES ------------------->
 
-            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-10" id="mainContent">
-                <iframe id="pageFrame" src="pages/project-info.html"></iframe>
+            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-10" id="upperFrameDiv">
+                <iframe id="upperFrame" src="pages/project-info.html"></iframe>
             </div><!-- /.col-xs-12 main -->
 
 
-            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-10" id="text-wall">
+            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-10" id="lowerFrameDiv">
                 <iframe id="lowerFrame" src="pages/project-info-lower.html"></iframe>
             </div>
 

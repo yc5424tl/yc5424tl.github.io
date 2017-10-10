@@ -1,4 +1,7 @@
-*{
+
+
+
+    *{
     margin:0;
     padding:0;
     display:block;
@@ -7,42 +10,18 @@
     border-collapse: collapse;
     box-shadow: none;
     text-shadow: none;
-
 }
-
-    body{
+    body {
         background: #000000;
         overflow: auto;
     }
-
     a {
-
         font-weight: 900;
         text-transform: capitalize;
     }
 
-  /*  .button{
-        color:#883400
-    }*/
-/*
-    #text-wall {
 
-        font-variant: all-small-caps;
-        height:auto;
-        width:75vw;
-        overflow: auto;
-        margin: 5vh 5% 5vh 20%;
-        background-color: #000000;
-        color: #76A028;
-
-    }*/
-
-
-
-
-    /* --------------BANNER IMAGE-------------- */
-
-
+    /* --------------BANNER-------------- */
     .banner-img {
         position:relative;
         height:35vh;
@@ -50,18 +29,20 @@
         background-size:cover;
         z-index: 1000;
     }
-
     .banner-img img{
         display:block;
         width:100%;
         margin:0 auto;
     }
 
-
     /*----IFRAME------*/
-
-
-    #pageFrame {
+    #upperFrameDiv{
+        width:80vw;
+        padding: 0;
+        background-color: #000000;
+        margin:0 3% 0 17%;
+    }
+    #upperFrame {
 
         padding: 3%;
         height: 85vh;
@@ -70,7 +51,11 @@
         background-color: #000000;
         margin-bottom: 0;
     }
-
+    #lowerFrameDiv {
+        width: 80vw;
+        height: 50vh;
+        margin: 0 0 0 15vw;
+    }
     #lowerFrame{
         margin-top:0;
         margin-left: 6%;
@@ -81,129 +66,63 @@
 
     }
 
-
-
-    #text-wall{
-        width:80vw;
-        height: 50vh;
-        margin: 0 0 0 15vw;
-
-
-    }
-    #mainContent{
-        width:80vw;
-        padding: 0;
-        background-color: #000000;
-        margin:0 3% 0 17%;
-    }
-
-
-
-
-
-
-    /*------trials--------*/
-
-
-
-
-    /*------------*/
-
-
-
-
+    /*-----TOPBAR---------*/
     #topbar-navbar {
-        height:6%;
-        max-height:6%;
-        min-height:6vh;
+        height:6vh;
         position:fixed;
     }
 
-    /*-----------BUTTONS-----------*/
-
-    .navbar-btn, .dropdown,.dropdown .dropdown-menu, .dropdown-menu{
+    /*-----------SIDEBAR-----------*/
+    .navbar-btn,
+    .dropdown,
+    .dropdown .dropdown-menu,
+    .dropdown-menu {
         -webkit-transition-duration: 0.4s;
         -moz-transition-duration: 0.4s;
         transition-duration: 0.4s;
         background-color: #212121;
         color: #9EFFD3;
     }
-    .navbar-btn:hover {
+    .navbar-btn:hover{
         background-color: #ab3400;
-
     }
-
-    .dropdown:hover{
-        background-color: #44A0A9;
-
-    }
-
-
-
-
-
-   /* .dropdown-menu-navbar-btn:hover{
-        background-color: #44A0A9;
-        color: #212121;
-    }*/
-    .dropdown .dropdown-menu {
-        width: 100%;
-        text-align: center;
-        /*clear: both;*/
-    }
-
-    .dropdown .dropdown-menu li {
-       /* margin-left: 15%;
-        margin-right: 15%;*/
-        white-space: nowrap;
-        /*clear:both;*/
-}
-
-
-    .dropdown .dropdown-menu li a{
-        font-weight: bolder;
-        text-transform: uppercase;
-    }
-
-
-    .dropdown .dropdown-menu li a:link {
-        color:#44A0A9;
-    }
-
     .dropdown .dropdown-menu li a:hover {
         color: #ab3400;
-    }
-
-    .dropdown .dropdown-menu li a:visited {
-        color: #44A0A9;
     }
     .dropdown .dropdown-menu li a:active {
         color: #FFF;
     }
-
-
-    .nav.navbar-nav li a {
+    .dropdown:hover {
+        background-color: #44A0A9;
+    }
+    .dropdown .dropdown-menu li a:link,
+    .dropdown .dropdown-menu li a:visited {
+        color: #44A0A9;
+    }
+    .dropdown .dropdown-menu {
+        width: 100%;
+        text-align: center;
+    }
+    .dropdown .dropdown-menu li {
+        white-space: nowrap;
+}
+    .dropdown .dropdown-menu li a{
+        font-weight: bolder;
+        text-transform: uppercase;
+    }
+    .nav.navbar-nav li a {                   /*--sidebar btn txt clr--*/
         color: #808080;
     }
 
+    .dropdown-menu>.navbar-btn .nav-item.active {
+        background-color: red;
+    }
 
-    a:link{
-        color: #9EFFD3;
-    }
-    a:hover{
-        color: #212121;
-    }
-    a:visited{
-        color: #9EFFD3;
-    }
-    a:active{
-        color: #44A0A9;
-    }
 
 
     /* --------------SIDEBAR--------------------*/
 
-    #sidebar-row {
+    #sb-row {
         height:100%;
         position:fixed;
         width:15vw;
@@ -211,70 +130,44 @@
         padding:0;
         overflow: hidden;
     }
-
-    #sidebar-name {
+    #sb-btn-name {
         border-top: solid #44A0A9 10vh;
-        margin-top:5.25%;
+        margin-top:6%;
         width:15vw;
 
     }
-    #sidebar-email {
+    #sb-btn-mail {
         border-bottom: solid #44A0A9 10vh;
         width:15vw;
-
     }
-
-    #home-button {
+    #sb-btn-about {
         margin-top:10% ;
     }
-
-    #sidebar-navbar {
+    #sb-navbar {
         height:100%;
         width:15vw;
     }
-
-    /*--    SIDEBAR-COL       --*/
-    #sidebar{
+    #sb-div-col{
         height:100%;
         width:15vw;
         margin-left: -15vw;
         padding-left: 15vw;
         margin-right: 85%;
-
     }
-
-    /*----SIDEBAR NAV------*/
-     #sidebar .nav {
-
+    #sb-div-col .nav {
          width: 15vw;
          height:100%;
-
-
      }
-
-     /*----SIDEBAR TEXT-----*/
-
-    .navbar li{
+    .navbar li{                         /*----SIDEBAR FONT-----*/
         font-weight: 900;
         font-variant: all-petite-caps;
         font-size: 12pt;
         width:100%;
     }
-
-
-    /*----SIDEBAR LIST-------*/
-
-
-
-    .nav-item {
+    .nav-item {                          /*--sidebar item spacing--*/
         margin:0;
         padding:0 0 0 0;
     }
-
-
-
-
-
 
 
     /* -------------SIDEBAR COLLAPSE--------------*/
@@ -287,37 +180,37 @@
             transition: all 0.25s ease-out;
         }
 
-        #mainContent {
+        #upperFrameDiv {
             margin-left: 0;
         }
 
-        #mainContent
+        #upperFrameDiv,
         .row-offcanvas-right,
-        .sidebar-offcanvas {
+        .sb-offcanvas {
             right: -15vw;
         }
 
-        #mainContent
-        .row-offcanvas-left
-        .sidebar-offcanvas {
+        #upperFrameDiv,
+        .row-offcanvas-left,
+        .sb-offcanvas {
             left: -15vw;
         }
-        #mainContent
+        #upperFrameDiv,
         .row-offcanvas-right.active
         {
             right: 15vw;
         }
-        #mainContent
+        #upperFrameDiv,
         .row-offcanvas-left.active
         {
             left: 15vw;
         }
-        .sidebar-offcanvas {
+        .sb-offcanvas {
             position: absolute;
             top: 0;
             width: 15vw;
         }
-        #sidebar {
+        #sb-div-col {
             padding-top:0;
 
         }

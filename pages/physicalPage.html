@@ -2,9 +2,116 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Physical Sciences Chart</title>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/physicalPage.css">
 </head>
 <body>
+<div class="wrapper">
+    <div class="flex-container-fluid" id="container-modals">
 
+
+            <div class="flex-div">
+                <button type="button" id="modal-btn-bio" class="button btn btn-danger "
+                        data-toggle="modal" data-target="#modal-biology" data-backdrop="true">
+                    Fields of Biology<img src="../images/charts/biologyChart.png" class="img-responsive" >Click to Open</button>
+                <div class="modal fade" id="modal-biology" tabindex="-1" role="dialog" aria-labelledby="modal-biology">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modal-label-biology">Fields of Biology</h5>
+                                <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="../images/charts/biologyChart.png" >
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+
+
+            <div class="flex-div">
+                <button type="button" id="modal-btn-chem" class="button btn btn-danger"
+                        data-toggle="modal" data-target="#modal-chemistry" data-backdrop="true">
+                    Fields of Chemistry<img src="../images/charts/chemistyChart.png" class="img-responsive">Click to Open</button>
+                <div class="modal fade" id="modal-chemistry" tabindex="-1" role="dialog" aria-labelledby="modal-chemistry">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modal-label-chemistry">Fields of Chemistry</h5>
+                            </div>
+                            <div class="modal-body">
+                                <img src="../images/charts/chemistyChart.png">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="flex-div">
+                <button type="button" id="modal-btn-earth-sci" class="button btn btn-danger"
+                        data-toggle="modal" data-target="#modal-earth-sci" data-backdrop="true">
+                    Fields of Earth Sciences<img src="../images/charts/earthSciencesChart.png" class="img-responsive">Click to Open</button>
+                <div class="modal fade" id="modal-earth-sci" tabindex="-1" role="dialog" aria-labelledby="modal-earth-sci">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modal-label-earth-sciences">Fields of Earth Sciences</h5>
+                            </div>
+                            <div class="modal-body">
+                                <img src="../images/charts/earthSciencesChart.png">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+             <div class="flex-div">
+                <button type="button" id="modal-btn-phys" class="button btn btn-danger"
+                        data-toggle="modal" data-target="#modal-physics" data-backdrop="true">
+                    Fields of Physics<img src="../images/charts/physicsChart.png" class="img-responsive">Click to Open</button>
+                <div class="modal fade" id="modal-physics" tabindex="-1" role="dialog" aria-labelledby="modal-physics">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modal-label-physics">Fields of Physics</h5>
+                            </div>
+                            <div class="modal-body">
+                                <img src="../images/charts/physicsChart.png">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
 </body>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
 </html>

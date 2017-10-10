@@ -43,7 +43,7 @@ $(document).ready(function() {
 
 
 var lowerFrame = document.getElementById("lowerFrame");
-var upperFrame = document.getElementById("pageFrame");
+var upperFrame = document.getElementById("upperFrame");
 
 window.onload(iframeResize(lowerFrame));
 window.onload(iframeResize(upperFrame));

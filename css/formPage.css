@@ -1,111 +1,121 @@
+
+
+
 *{
-  /*  margin-left: 5%;*/
-    /*padding:0;*/
-    font-family: Arial, sans-serif;
-    background-color:#000;
-    color:#44A0A9;
-   /* width:auto;
-    height:auto;*/
+
+padding:0;
+margin-top:0;
+margin-bottom:0;
+font-family: Arial, sans-serif;
+background-color:#000;
+color:#4F9BA3;
+border-collapse: collapse;
 }
-
-li, .dropdown-menu, .dropdown-nested{
-    background-color:#44A0A9;
-}
-
-.dropdown-menu.multi-level a {
-    color:#FFF;
-}
-
-
 .container{
-
-    width:100%;
-    height:100%;
+width:100%;
+height:100%;
 }
-header{
-    margin-left:3%;
-}
-
-#dropdownLabel{
-    margin-left:0;
-    padding:0;
-}
-
-.custom-file-input{
-    font-family: Arial, sans-serif;
-    color: #ab3400;
-    font-variant: small-caps;
-    font-weight: 900;
-}
-
 form{
-    margin-left:5%;
-}
-#file-input{
-    /*border: solid red .5vw;*/
-}
-#fileLabel{
-    /*border:solid blue .125vw;*/
-
-    margin: 1% 0 0 .75%;
+margin-left:5%;
 }
 
 /*----INPUT FIELDS------*/
-#title, #author1, #yearID, #version, #publisher, #id-code, #subject-dropdown{
-    min-width: 10vw;
-    width: 20%;
-    max-width: 30vw;
+#subject-dropdown{
+background-color: #fff;
+}
+#title,
+#author1,
+#yearID,
+#version,
+#publisher,
+#id-code,
+#subject-dropdown{
+width: 35vw;
+background-color: #fff;
+}
+.dropdown-menu.multi-level a {     /* 'no file chosen' color */
+color:#000;
+font-weight:600;
+}
+#file-input{
+width:97%;
+}                   /*NO IDEA WHY THE TWO BELOW WORK TO ALIGN W/ REST OF FORM BUT ??? */
+#fileLabel{
+width:36vw;
+}
+.custom-file-input{
+font-family: Arial, sans-serif;
+color: #000;
+font-variant: small-caps;
+font-weight: 900;
 }
 
+/*---carets----*/
+a span.caret{      /*---colors first caret  https://stackoverflow.com/a/37331752    ---*/
+color:#000;
+position: relative;
+}
+.dropdown-nested .caret{     /*----colors all inner carets -----*/
+color:#000;
+float:right;
+border:solid black 5px;
 
+}
 
+/*-----NESTED DROPDOWN------*/
 
-/*-----DROPDOWN------*/
-
+.field-parent,
+.dropdown-menu,
+.dropdown-menu a,
+.dropdown-menu li,
+.dropdown-nested,
+.dropdown-nested a,
+.dropdown-nested li,
+.dropdown-menu.multi-level ul,
+.dropdown-menu.multi-level ul li,
+.dropdown-menu.multi-level ul li a,
+.dropdown-menu.multi-level a{
+border: solid black .3vw;
+border-collapse:collapse;
+padding:0;
+/*  margin:0;*/
+}
+.dropdown-menu,
+.dropdown-nested a {                                /*THIS IS FOR THHE SUBJECT BG COLOR */  /*.dropdown-menu.multi-level .dropdown-nested a{background-color: #856A5D; }*/
+background-color: #4F9BA3;
+}
+#dropdownLabel{
+margin:0;
+padding:0;
+width:100%;
+font-weight: 900;
+font-variant: small-caps;
+}
+.dropdown-nested .dropdown-toggle {   /*----Highlights menu items with a submenu ------*/
+background-color: #FF6D1E;
+}
 .dropdown-nested {
-    position: relative;
-}
+position: relative;
+background-color: #000;
 
+}
 .dropdown-nested>.dropdown-menu {
-    top: 0;
-    left: 100%;
-   /* margin-top: -6px;
-    margin-left: -1px;
-    -webkit-border-radius: 0 6px 6px 6px;
-    -moz-border-radius: 0 6px 6px;
-    border-radius: 0 6px 6px 6px;*/
+top: 0;
+left: 100%;
 }
-
 .dropdown-nested:hover>.dropdown-menu {
-    display: block;
+display: block;
 }
-
 .dropdown-nested>a:after {
-    display: block;
-    content: " ";
-    float: right;
-    width: 0;
-    height: 0;
- /*   border-color: transparent;
-    border-style: solid;
-    border-width: 5px 0 5px 5px;
-    border-left-color: #ccc;*/
-    margin-top: 5px;
-    margin-right: -10px;
+display: block;  /*content: " ";*/
+float: right;
+width: 0;
+height: 0;
 }
-
-/*.dropdown-nested:hover>a:after {
-    border-left-color: #fff;
+/*.dropdown-nested.pull-left {
+float: none;
 }*/
-
-.dropdown-nested.pull-left {
-    float: none;
-}
-
 .dropdown-nested.pull-left>.dropdown-menu {
-    left: -100%;
-    margin-left: 10px;
- /*   -webkit-border-radius: 6px 0 6px 6px;
-    -moz-border-radius: 6px 0 6px 6px;
-    border-radius: 6px 0 6px 6px;*/
+left: -100%;
+margin-left: 10px;
 }
