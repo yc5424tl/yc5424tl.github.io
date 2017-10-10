@@ -1,20 +1,12 @@
 
 
-#carousel-col {
-    height:65vh;
-    width:85vw;
-    text-align:center;
 
-}
 
-body{
-    background-color: #000000;
-}
-.row{
+#project-info-row{
     padding-left:3%;
 }
 
-* {
+/** {
     padding:0;
     margin:0;
     border:0;
@@ -25,14 +17,19 @@ body{
     border-collapse: collapse;
     color: #44A0A9;
 
+}*/
+
+
+#carousel-col {
+    height:65vh;
+    width:85vw;
+    text-align:center;
+
 }
 
 /*----INDICATORS-------*/
 .carousal-indicators {
-
-
-
-
+    color: #44A0A9;
 }
 
 .carousel-caption h5,
@@ -47,9 +44,6 @@ body{
     color: #212121;
     text-transform: uppercase;
     font-size:14pt;
-
-
-
 }
 
 #controls{
@@ -60,27 +54,20 @@ body{
 .col-12-* p {
     font-size: 10pt;
     font-weight: 900;
-
 }
 
 
 /*-------CAROUSEL PHOTOS------*/
 
 #item-0 {
-    /*background-image: url('../images/tree/simpleTree.png');*/
     background-image: url('../images/tree/borean1.png');
     height: 60vh;
-
 }
 #item-1 {
     background-image: url('../images/tree/borean2.png');
     height:60vh;
-
 }
 #item-2 {
     background-image: url('../images/tree/borean3.png');
-    /*background-image: url('../images/tree/boreanIndoEuropean.jpg');*/
     height:60vh;
-
-
 }

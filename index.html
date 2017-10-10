@@ -16,69 +16,592 @@
 
 <body>
 
-        <div class="flex-container-fluid">
-            <div class="row">
-                <div class="banner-img">
+    <div class="flex-container-fluid">
+        <div class="panel-group" id="accordion">
+            <div class="accordion-group">
+
+                <!--BANNER-->
+                <div class="row">
+                    <div class="banner-img">
+                    </div>
                 </div>
-            </div>
 
-
-            <div class="row" id="navbar-row">
-                <div class="navbar navbar-inverse navbar-fixed-top" id="topbar-navbar">
-                    <div class="col-12-*" id="topbar">
-                        <div class ="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav navbar-nav">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="#">The Branches of Science</a>
+                <!--TOP NAV-->
+                <div class="row" id="navbar-row">
+                    <div class="navbar navbar-inverse navbar-fixed-top" id="topbar-navbar">
+                        <div class="col-12-*" id="topbar">
+                            <div class ="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav navbar-nav">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">Accounting for File System Deficiencies</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row row-offcanvas row-offcanvas-left" id="sb-row">
-                <div class="navbar navbar-inverse sidebar" id="sb-navbar">
-                    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2 sidebar" id="sb-div-col" role="navigation">
-                        <ul class="nav navbar-nav " ><!-- id="sidebar-list"-->
 
-                            <li class="navbar-btn nav-item " id="sb-btn-name"><a href="#">Jacob Boline</a></li>
-                            <li class="navbar-btn nav-item " id="sb-btn-mail"><a href="#">jkboline@gmail.com</a></li>
-                            <li class="navbar-text nav-item" id="sb-spanner"></li>
-                            <li class="navbar-btn nav-item" id="sb-btn-about"><a href="pages/project-info.html">About</a></li>
-                            <li class="dropdown nav-item">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Fields of Science<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li class="navbar-btn nav-item"><a href="pages/physicalPage.html" >Physical Sciences</a></li>
-                                    <li class="navbar-btn nav-item"><a href="pages/socialPage.html" >Social Sciences</a></li>
-                                    <li class="navbar-btn nav-item"><a href="pages/formPage.html" >Formal Sciences</a></li>
-                                    <li class="navbar-btn nav-item"><a href="pages/appliedPage.html" >Applied Sciences</a></li>
-                                </ul>
-                            </li>
-                            <li class="navbar-btn nav-item"><a href="pages/formPage.html">Add File Form</a></li>
-                            <li class="navbar-btn nav-item"><a href="pages/codePage.html">Project Source Code</a></li>
-                        </ul>
+                <!--SIDEBAR-->
+                <div class="row row-offcanvas row-offcanvas-left" id="sb-row">
+                    <div class="navbar navbar-inverse sidebar" id="sb-navbar">
+                        <div class="col-xs-6 col-sm-3 col-md-3 col-lg-2 sidebar" id="sb-div-col" role="navigation">
+
+                            <ul class="nav navbar-nav " ><!-- id="sidebar-list"-->
+
+                                <li class="navbar-btn nav-item " id="sb-btn-name"><a href="#">Jacob Boline</a></li>
+                                <li class="navbar-btn nav-item " id="sb-btn-mail"><a href="#">jkboline@gmail.com</a></li>
+                                <li class="navbar-text nav-item" id="sb-spanner"></li>
+                                <li class="navbar-btn nav-item " data-toggle="collapse" data-target="#page-project-info" data-parent="#accordion" id="sb-btn-about"><a href="#">About</a></li>
+                                <li class="dropdown nav-item" id="sb-dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Fields of Science<span class="caret"></span></a>
+                                    <ul class="dropdown-menu" id="sb-dropdown-menu">
+                                        <li class="navbar-btn nav-item" data-toggle="collapse" data-target="#page-physical-sci" data-parent="#accordion" id="sb-btn-phy-sci"><a href="#">Physical Sciences</a></li>
+                                        <li class="navbar-btn nav-item"><a href="pages/socialPage.html" >Social Sciences</a></li>
+                                        <li class="navbar-btn nav-item"><a href="pages/formPage.html" >Formal Sciences</a></li>
+                                        <li class="navbar-btn nav-item"><a href="pages/appliedPage.html" >Applied Sciences</a></li>
+                                    </ul>
+                                </li>
+                                <li class="navbar-btn nav-item " data-toggle="collapse" data-target="#page-form" data-parent="#accordion" id="sb-btn-form"><a href="#">Add File Form</a></li>
+                                <li class="navbar-btn nav-item "><a href="pages/codePage.html">Project Code</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+
+
+
+                <!--PHYSICAL SCIENCES-->
+                <div class="wrapper">
+                    <div class="panel-collapse collapse" id ="page-physical-sci">
+                        <div class="flex-container-fluid" id="container-modals">
+
+
+                            <div class="flex-div">
+                                <button type="button" id="modal-btn-bio" class="button btn btn-danger "
+                                        data-toggle="modal" data-target="#modal-biology" data-backdrop="true">
+                                    Fields of Biology<img src="images/charts/biologyChart.png" class="img-responsive" >Click to Open</button>
+                                <div class="modal fade" id="modal-biology" tabindex="-1" role="dialog" aria-labelledby="modal-biology">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="modal-label-biology">Fields of Biology</h5>
+                                                <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="images/charts/biologyChart.png" >
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="flex-div">
+                                <button type="button" id="modal-btn-chem" class="button btn btn-danger"
+                                        data-toggle="modal" data-target="#modal-chemistry" data-backdrop="true">
+                                    Fields of Chemistry<img src="images/charts/chemistyChart.png" class="img-responsive">Click to Open</button>
+                                <div class="modal fade" id="modal-chemistry" tabindex="-1" role="dialog" aria-labelledby="modal-chemistry">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="modal-label-chemistry">Fields of Chemistry</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="images/charts/chemistyChart.png">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="flex-div">
+                                <button type="button" id="modal-btn-earth-sci" class="button btn btn-danger"
+                                        data-toggle="modal" data-target="#modal-earth-sci" data-backdrop="true">
+                                    Fields of Earth Sciences<img src="images/charts/earthSciencesChart.png" class="img-responsive">Click to Open</button>
+                                <div class="modal fade" id="modal-earth-sci" tabindex="-1" role="dialog" aria-labelledby="modal-earth-sci">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="modal-label-earth-sciences">Fields of Earth Sciences</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="images/charts/earthSciencesChart.png">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="flex-div">
+                                <button type="button" id="modal-btn-phys" class="button btn btn-danger"
+                                        data-toggle="modal" data-target="#modal-physics" data-backdrop="true">
+                                    Fields of Physics<img src="images/charts/physicsChart.png" class="img-responsive">Click to Open</button>
+                                <div class="modal fade" id="modal-physics" tabindex="-1" role="dialog" aria-labelledby="modal-physics">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="modal-label-physics">Fields of Physics</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="images/charts/physicsChart.png">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                 <!---PROJECT INFO---->
+                <div class="wrapper">
+                    <div class="panel-collapse collapse in" id="page-project-info">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12-*">
+                                    <p>File Management</p>
+                                    <p>Illustrating the One-to-Many Structure of a File Management System</p>
+                                </div>
+
+
+                                <!-------Carousel---------->
+                                <div class="col-12-*" id="carousel-col">
+                                    <div class="carousel slide" id="project-premise-carousel" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#project-premise-carousel" data-slide-to="0" class="active"></li>
+                                            <li data-target="#project-premise-carousel" data-slide-to="1"></li>
+                                            <li data-target="#project-premise-carousel" data-slide-to="2"></li>
+                                        </ol>
+                                        <div class="carousel-inner" >
+
+                                            <div class="item active" id="item-0">
+                                                <div class="carousel-caption">
+                                                    <h3>Moderately Complexity</h3>
+                                                    <p>~1/20 of Tree (Anatolian and Hellenic Sub-Groups of Indo-European)</p>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="item-1">
+                                                <div class="carousel-caption">
+                                                    <h3>Super Complex</h3>
+                                                    <p>~1/5 of Tree (Mixed Selection of the Dene-Daic Branch</p>
+                                                </div>
+                                            </div>
+                                            <div class="item" id="item-2">
+                                                <div class="carousel-caption ">
+                                                    <h3>Super Duper Complex</h3>
+                                                    <p>(Almost) Complete Borean Linguistic Family Tree</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!--------Carousel Controls------>
+                                    <div id="controls">
+                                        <a class="carousel-control-prev" href="#project-premise-carousel" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span></a>
+                                        <a class="carousel-control-next" href="#project-premise-carousel" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span></a>
+                                    </div>
+
+
+
+                                    <div class="col-12-*" id="carousel-text-below">
+
+                                    </div>
+                                </div>
+                            </div>  <!-----------/row------->
+                        </div>      <!-- /flex-container-fluid -->
+                    </div>
+                </div>
+
+                <!---FORM--->
+                <div class="wrapper">
+                    <div class="collapse" id="page-form">
+                        <div class="container" id="container-form">
+                            <header>
+                                <h2>File Details</h2>
+                                <h4>Entering Local Files in the System</h4>
+                            </header>
+
+                            <!--FORM START--->
+                            <form action="#">
+
+                                <!---SUBJECT--->
+                                <div class="form-group row">
+                                    <label for="subject-dropdown" class="col-2 col-form-label">Subject:</label>
+
+                                    <div class="dropdown form-control col-10" id="subject-dropdown">
+                                        <a id="dropdownLabel" role="button" data-toggle="dropdown" class="btn btn-default" href="#">
+                                            Select Subject</a>
+                                        <ul class="dropdown-menu multi-level" role="menu">
+                                            <li class="dropdown-nested" id="firstItem">
+                                                <a class="dropdown-toggle"  data-toggle="dropdown-nested" tabindex="-1" href="#">Physical Science<b class="caret"></b></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-toggle" data-toggle="dropdown-nested" tabindex="-1" href="#">Physical Science<b class="caret"></b></a></li>
+                                                    <li class="dropdown-nested">
+                                                        <!---BIOLOGY--->
+                                                        <a class="dropdown-toggle" data-toggle="dropdown-nested" data-backdrop="true" tabindex="-1" href="#">Biology<b class="caret"></b></a>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="field-parent"><a href="#">Biology</a></li>
+                                                            <li><a href="#">Aerobiology</a></li>
+                                                            <li><a href="#">Agiculture</a></li>
+                                                            <li class="dropdown-nested">
+                                                                <a class="dropdown-toggle" data-toggle="dropdown-nested" tabindex="-1" href="#">Anatomy<b class="caret"></b></a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li class="field-parent"><a href="#">Anatomy</a></li>
+                                                                    <li><a href="#">Human Anatomy</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="#">Astrobiology</a></li>
+                                                            <li><a href="#">Biochemistry</a></li>
+                                                            <li><a href="#">Bioengineering</a></li>
+                                                            <li><a href="#">Biogeography</a></li>
+                                                            <li><a href="#">Bioinformatics</a></li>
+                                                            <li><a href="#">Biomathematics</a></li>
+                                                            <li><a href="#">Biomechanics</a></li>
+                                                            <li><a href="#">Biomedical Research</a></li>
+                                                            <li><a href="#">Biophysics</a></li>
+                                                            <li><a href="#">Biotechnology</a></li>
+                                                            <li><a href="#">Building Biology</a></li>
+                                                            <li><a href="#">Botany</a></li>
+                                                            <li><a href="#">Cell Biology</a></li>
+                                                            <li><a href="#">Conservation Biology</a></li>
+                                                            <li><a href="#">Chronobiology</a></li>
+                                                            <li><a href="#">Cryobiology</a></li>
+                                                            <li class="dropdown-nested">
+                                                                <a class="dropdown-toggle" data-toggle="dropdown-nested" tabindex="-1" href="#">Developmental Biology<b class="fa-caret-down"></b></a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li class="field-parent"><a href="#">Developmental Biology</a></li>
+                                                                    <li><a href="#">Embryology</a></li>
+                                                                    <li><a href="#">Gerontology</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="#">Ecology</a></li>
+                                                            <li><a href="#">Environmental Biology</a></li>
+                                                            <li><a href="#">Epidemiology</a></li>
+                                                            <li class="dropdown-nested">
+                                                                <a class="dropdown-toggle" data-toggle="dropdown-nested" tabindex="-1" href="#">Evolution<b class="caret"></b></a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li class="field-parent"><a href="#">Evolution</a></li>
+                                                                    <li class="dropdown-nested">
+                                                                        <a class="dropdown-toggle" data-toggle="dropdown-nested" tabindex="-1" href="#">Evolutionary Biology<b class="caret"></b></a>
+                                                                        <ul class="dropdown-menu">
+                                                                            <li class="field-parent"><a href=#>Evolutionary Biology></a></li>
+                                                                            <li><a href="#">Evolutionary Developmental Biology</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="dropdown-nested">
+                                                                        <a class="dropdown-toggle" data-toggle="dropdown-nested" tabindex="-1" href="#">Paleobiology<b class="caret"></b></a>
+                                                                        <ul class="dropdown-menu">
+                                                                            <li class="field-parent"><a href="#">Paleobiology</a></li>
+                                                                            <li><a href="#">Paleontology</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="dropdown-nested">
+                                                                <a class="dropdown-toggle" data-toggle="dropdown-nested" tabindex="-1" href="#">Genetics<b class="caret"></b></a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li class="field-parent"><a href="#">Genetics</a></li>
+                                                                    <li><a href="#">Genomics</a></li>
+                                                                    <li><a href="#">Proteomics</a></li>
+                                                                    <li><a href="#">Population Genetics</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="#">Histology</a></li>  <!--HISTOLOGY #1-->
+                                                            <li><a href="#">Integrative Biology</a></li>
+                                                            <li><a href="#">Limnology</a></li>
+                                                            <li><a href="#">Marine Biology</a></li>
+                                                            <li class="dropdown-nested">
+                                                                <a class="dropdown-toggle" data-toggle="dropdown-nested" tabindex="-1" href="#">Microbiology<b class="caret"></b></a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li class="field-parent"><a href="#">Microbiology</a></li>
+                                                                    <li><a href="#">Bacteriology</a></li>
+                                                                    <li><a href="#">Virology</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="dropdown-nested">
+                                                                <a class="dropdown-toggle" data-toggle="dropdown-nested" tabindex="-1" href="#">Molecular Biology<b class="caret"></b></a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li class="field-parent"><a href="#">Molecular Biology</a></li>
+                                                                    <li><a href="#">Structural Biology</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="#">Morphology</a></li>
+                                                            <li><a href="#">Mycology</a></li>
+                                                            <li><a href="#">Oceanography</a></li>
+                                                            <li><a href="#">Oncology</a></li>
+                                                            <li class="dropdown-nested">
+                                                                <a class="dropdown-toggle" data-toggle="dropdown-nested" tabindex="-1" href="#">Population Biology<b class="caret"></b></a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li class="field-parent"><a href="#">Population Biology</a></li>
+                                                                    <li><a href="#">Population Ecology</a></li>
+                                                                    <li><a href="#">Population Genetics</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="#">Pathology</a></li>
+                                                            <li><a href="#">Parasitology</a></li>
+                                                            <li><a href="#">Pharmacology</a></li>
+                                                            <li class="dropdown-nested">
+                                                                <a class="dropdown-toggle" data-toggle="dropdown-nested" tabindex="-1" href="#">Physiology<b class="caret"></b></a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li class="field-parent"><a href="#">Physiobiology</a></li>
+                                                                    <li><a href="#">Immunology</a></li>
+                                                                    <li><a href="#">Kenesiology</a></li>
+                                                                    <li class="dropdown-nested">
+                                                                        <a class="dropdown-toggle" data-toggle="dropdown-nested" tabindex="-1" href="#">Neurobiology<b class="caret"></b></a>
+                                                                        <ul class="dropdown-menu">
+                                                                            <li class="field-parent"><a href="#">Neurobiology</a></li>
+                                                                            <li><a href="#">Neuroscience</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li><a href="#">Histology</a></li>    <!--HISTOLOGY #2-->
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="#">Phytopathology</a></li>
+                                                            <li><a href="#">Psychobiology</a></li>
+                                                            <li><a href="#">Sociobiology</a></li>
+                                                            <li class="dropdown-nested">
+                                                                <a class="dropdown-toggle" data-toggle="dropdown-nested" tabindex="-1" href="#">Systematics<b class="caret"></b></a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li class="field-parent"><a href="#">Systematics</a></li>
+                                                                    <li><a href="#">Cladistics</a></li>
+                                                                    <li><a href="#">Phylogeny</a></li>
+                                                                    <li><a href="#">Taxonomy</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="dropdown-nested">
+                                                                <a class="dropdown-toggle" data-toggle="dropdown-nested" tabindex="-1" href="#">Zoology<b class="caret"></b></a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li class="field-parent"><a href="#">Zoology</a></li>
+                                                                    <li class="dropdown-nested">
+                                                                        <a class="dropdown-toggle" data-toggle="dropdown-nested" tabindex="-1" href="#">Arachnology<b class="caret"></b></a>
+                                                                        <ul class="dropdown-menu">
+                                                                            <li class="field-parent"><a href="#">Arachnology</a></li>
+                                                                            <li class="dropdown-nested">
+                                                                                <a class=dropdown-toggle" data-toggle="dropdown-nested" tabindex="-1" href="#">Acarology<b class="caret"></b></a>
+                                                                                <ul class="dropdown-menu">
+                                                                                    <li class="field-parent"><a href="#">Acarology</a></li>
+                                                                                </ul>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li class="dropdown-nested">
+                                                                        <a class="dropdown-toggle" data-toggle="dropdown-nested" tabindex="-1" href="#">Entomology<b class="caret"></b></a>
+                                                                        <ul class="dropdown-menu">
+                                                                            <li class="field-parent"><a href="#">Entomology</a></li>
+                                                                            <li><a href="#">Myrmecology</a></li>
+                                                                            <li><a href="#">Coleopterology</a></li>
+                                                                            <li><a href="#">Lepidopterology</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li><a href="#">Ethology</a></li>
+                                                                    <li><a href="#">Helminthology</a></li>
+                                                                    <li><a href="#">Herpetology</a></li>
+                                                                    <li><a href="#">Ichthyology</a></li>
+                                                                    <li><a href="#">Malacology</a></li>
+                                                                    <li class="dropdown-nested">
+                                                                        <a class="dropdown-toggle" data-toggle="dropdown-nested" tabindex="-1" href="#">Mammology<b class="caret"></b></a>
+                                                                        <ul class="dropdown-menu">
+                                                                            <li class="field-parent"><a href="#">Mammology</a></li>
+                                                                            <li><a href="#">Cetology</a></li>
+                                                                            <li><a href="#">Physical Anthropology</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li><a href="#">Nematology</a></li>
+                                                                    <li><a href="#">Ornithology</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li><!---END BIOLOGY--->
+                                                    <li class="dropdown-nested"><!---PHYSICS--->
+                                                        <a class="dropdown-toggle" data-toggle="dropdown-nested" data-backdrop="true" tabindex="-1" href="#">Physics<b class="caret"></b></a>
+                                                        <ul class="dropdown-menu">
+                                                            <li class="field-parent"><a href="#">Physics</a></li>
+                                                            <li class="dropdown-nested">
+                                                                <a class="dropdown-toggle" data-toggle="dropdown-nested" tabindex="-1" href="#">Astronomy<b class="caret"></b></a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li class="field-parent"><a href="#">Astronomy</a></li>
+                                                                    <li><a href="#">Astrodynamics</a></li>
+                                                                    <li><a href="#">Astrometry</a></li>
+                                                                    <li><a href="#">Cosmology</a></li>
+                                                                    <li><a href="#">Extragalactic Astronomy</a></li>
+                                                                    <li><a href="#">Galactic Astronomy</a></li>
+                                                                    <li><a href="#">Physical Cosmology</a></li>
+                                                                    <li><a href="#">Planetary Science</a></li>
+                                                                    <li><a href="#">Stellar Astronomy</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="#">Acoustics</a></li>
+                                                            <li><a href="#">Astrophysics</a></li>
+                                                            <li class="dropdown-nested">
+                                                                <a class="dropdown-toggle" data-toggle="dropdown-nested" tabindex="-1" href="#">Agrophysics<b class="caret"></b></a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li class="field-parent"><a href="#">Agrophysics</a></li>
+                                                                    <li><a href="#">Soil Physics</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="#">Atmospheric Physics</a></li>
+                                                            <li class="dropdown-nested">
+                                                                <a class="dropdown-toggle" data-toggle="dropdown-nested" tabindex="-1" href="#">Biophysics<b class="caret"></b></a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li class="field-parent"><a href="#">Biophysics</a></li>
+                                                                    <li><a href="#">Medical Physics</a></li>
+                                                                    <li><a href="#">Neurophysics</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="#">Chemical Physics </a></li>
+                                                            <li><a href="#">Atomic, Molecular, and Optical Physics </a></li>
+                                                            <li><a href="#">Computational Physics </a></li>
+                                                            <li><a href="#">Condensed Matter Physics</a></li>
+                                                            <li><a href="#">Cryogenics</a></li>
+                                                            <li><a href="#">Dynamics</a></li>
+                                                            <li><a href="#">Econophysics</a></li>
+                                                            <li><a href="#">Electromagnetism</a></li>
+                                                            <li><a href="#">Geophysics</a></li>
+                                                            <li><a href="#">Material Physics</a></li>
+                                                            <li><a href="#">Mathematical Physics</a></li>
+                                                            <li class="dropdown-nested">
+                                                                <a class="dropdown-toggle" data-toggle="dropdown-nested" tabindex="-1" href="#">Mechanics<b class="caret"></b></a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li class="field-parent"><a href="#">Mechanics</a></li>
+                                                                    <li><a href="#">Biomechanics</a></li>
+                                                                    <li><a href="#">Classical Mechanics</a></li>
+                                                                    <li><a href="#">Continuum Mechanics</a></li>
+                                                                    <li><a href="#">Fluid Mechanics</a></li>
+                                                                    <li><a href="#">Quantum Mechanics</a></li>
+                                                                    <li><a href="#">Thermodynamics</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="#">Nuclear Physics</a></li>
+                                                            <li><a href="#">Optics</a></li>
+                                                            <li><a href="#">Particle Physics</a></li>
+                                                            <li><a href="#">Psychophysics</a></li>
+                                                            <li><a href="#">Plasma Physics</a></li>
+                                                            <li><a href="#">Polymer Physics</a></li>
+                                                            <li><a href="#">Quantum Physics</a></li>
+                                                            <li><a href="#">Relativity</a></li>
+                                                            <li><a href="#">Statics</a></li>
+                                                            <li><a href="#">Solid State Physics</a></li>
+                                                            <li><a href="#">Vehicle Dynamics</a></li>
+                                                        </ul>
+                                                    </li><!---END PHYSICS--->
+                                                </ul>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!---NAME--->
+                                <div class="form-group row">
+                                    <label for="title" class="col-2 col-form-label">Title:</label>
+                                    <div class="col-10">
+                                        <input name="title" id="title" type="text" class="form-control" value="" placeholder="required" maxlength="50" required>
+                                    </div>
+                                </div>
+
+
+                                <!---CREATED BY--->
+                                <div class="form-group row">
+                                    <label for="author1" class="col-2 col-form-label">Created By:</label>
+                                    <div class="col-10">
+                                        <input name="author1" id="author1" type="text" class="form-control" value="" placeholder="required" minlength="1" maxlength="100" multiple required>
+                                    </div>
+                                </div>
+
+                                <!---YEAR--->
+                                <div class="form-group row">
+                                    <label for="yearID" class="col-2 col-form-label">Year:</label>
+                                    <div class="col-10">
+                                        <input name="year" id="yearID" type="number" class="form-control" min=0 max="" maxlength="4" value="" placeholder="optional -- Gregorian numerical value only"> <!-- only works for AD, need radio/cb to allow for BC -->
+                                    </div>
+                                </div>
+
+                                <!---Version--->
+                                <div class="form-group row">
+                                    <label for="version" class="col-2 col-form-label">Version:</label>
+                                    <div class="col-10">
+                                        <input name="version" id="version" type="text" class="form-control" value="" maxlength="50" placeholder="optional">
+                                    </div>
+                                </div>
+
+                                <!---PUBLISHER--->
+                                <div class="form-group row">
+                                    <label for="publisher" class="col-2 col-form-label">Publisher:</label>
+                                    <div class="col-10">
+                                        <input name="publisher" id="publisher" type="text" class="form-control" value="" placeholder="optional">
+                                    </div>
+                                </div>
+
+                                <!---IDENTIFICATION CODE--->
+                                <div class="form-group row">
+                                    <label for="id-code" class="col-2 col-form-label">ID Code:</label>
+                                    <div class="col-10">
+                                        <input name="id-code" id="id-code" type="text" class="form-control" value="" placeholder="ISBN - Serial # - ETC" maxlength="100">
+                                    </div>
+                                </div>
+
+                                <!---FILE SELECTION--->
+                                <div class="form-group row">
+                                    <label class="custom-file col-2 col-form-label" id="fileLabel">File Location:
+                                        <input type="file" id="file-input" class="custom-file-input col-10 btn btn-default"  required >
+                                        <span class="custom-file-control" id="file-control"></span>
+                                    </label>
+                                </div>
+
+                                <!---SUBMIT BUTTON--->
+                                <div class="form-group row">
+                                    <div class="col-offset-2 col-10">
+                                        <button type="submit" class="btn btn-default">Add File</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                  </div>
+                </div>
+
             </div>
-
-
-
-
-
-        <!---------- IFRAMES ------------------->
+        </div>
+        <!-----END PROJECT INFO -------->
+<!--
+        &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; IFRAMES -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;
 
             <div class="col-xs-12 col-sm-9 col-md-9 col-lg-10" id="upperFrameDiv">
                 <iframe id="upperFrame" src="pages/project-info.html"></iframe>
-            </div><!-- /.col-xs-12 main -->
+            </div>
 
 
             <div class="col-xs-12 col-sm-9 col-md-9 col-lg-10" id="lowerFrameDiv">
                 <iframe id="lowerFrame" src="pages/project-info-lower.html"></iframe>
-            </div>
-
-        </div>
+            </div>-->
+    </div>
 </body>
+
+
+
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/gitPageJS.js"></script>
